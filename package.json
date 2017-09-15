@@ -1,0 +1,27 @@
+{
+  "name": "diablo",
+  "version": "1.0.0",
+  "description": "Diablo Fan site",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/c3as3/Diablo.git"
+  },
+  "keywords": [
+    "Diablo",
+    "Fan",
+    "Site"
+  ],
+  "author": "Diglio, Sanchez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/c3as3/Diablo/issues"
+  },
+  "homepage": "https://github.com/c3as3/Diablo#readme",
+  "dependencies": {
+    "express": "^4.15.4"
+  }
+}
