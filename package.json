@@ -22,12 +22,16 @@
   },
   "homepage": "https://github.com/c3as3/Diablo#readme",
   "dependencies": {
-    "body-parser": "^1.18.1",
     "bluebird": "^3.5.0",
+    "body-parser": "^1.18.1",
     "express": "^4.15.4",
+    "express-recaptcha": "^2.3.0",
     "express-validator": "^4.1.1",
+    "https": "^1.0.0",
     "jade": "^1.11.0",
     "mongodb": "^2.2.26",
-    "mongoose": "~4.9.0"
+    "mongoose": "^4.9.10",
+    "nodemailer": "^4.1.0",
+    "xoauth2": "^1.2.0"
   }
 }
