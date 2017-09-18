@@ -4,7 +4,7 @@
   "description": "Diablo Fan site",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,9 @@
   },
   "homepage": "https://github.com/c3as3/Diablo#readme",
   "dependencies": {
-    "express": "^4.15.4"
+    "body-parser": "^1.18.1",
+    "express": "^4.15.4",
+    "express-validator": "^4.1.1",
+    "jade": "^1.11.0"
   }
 }
