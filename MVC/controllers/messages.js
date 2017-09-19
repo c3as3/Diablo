@@ -70,7 +70,7 @@ module.exports.messageSubmitted = function(req,res)   {
       if (errors) {
 
 
-  console.log('errors on form ')
+      console.log('errors on form ')
       } else{
 
         var newMessage = {
