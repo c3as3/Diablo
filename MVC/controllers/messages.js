@@ -130,5 +130,5 @@ var sendJsonResponse = function(res, status, content) {
 
 module.exports.messages = function(req, res){
   res.render('messages');
-  console.log('Form Loaded, awaiting input...')
+  console.log('Form Loaded, waiting for user input...')
 };
