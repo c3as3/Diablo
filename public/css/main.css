@@ -61,7 +61,7 @@ header {
       height: 40px;
       cursor: pointer;
       top: 5px;
-      right: 5px; }
+      right: 20px; }
       header .mobile-nav .hamburger span {
         display: flex;
         position: absolute;

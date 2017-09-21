@@ -61,11 +61,43 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/MVC\/views\/about.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/public\/html\/about.html",
+		"oF": 2,
+		"oS": 0
+		},
+	"\/MVC\/views\/classes.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/public\/html\/classes.html",
+		"oF": 2,
+		"oS": 0
+		},
+	"\/MVC\/views\/guides.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/public\/html\/guides.html",
+		"oF": 2,
+		"oS": 0
+		},
 	"\/MVC\/views\/index.jade": {
 		"cOD": 1,
 		"ft": 512,
 		"oA": 0,
 		"oAP": "\/public\/html\/index.html",
+		"oF": 2,
+		"oS": 0
+		},
+	"\/MVC\/views\/items.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/public\/html\/items.html",
 		"oF": 2,
 		"oS": 0
 		},
@@ -75,6 +107,14 @@
 		"oA": 1,
 		"oAP": "\/MVC\/views\/layout.html",
 		"oF": 0,
+		"oS": 0
+		},
+	"\/MVC\/views\/leaderboards.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/public\/html\/leaderboards.html",
+		"oF": 2,
 		"oS": 0
 		},
 	"\/MVC\/views\/messages.jade": {
@@ -90,6 +130,14 @@
 		"ft": 512,
 		"oA": 0,
 		"oAP": "\/public\/html\/news.html",
+		"oF": 2,
+		"oS": 0
+		},
+	"\/MVC\/views\/twitch.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/public\/html\/twitch.html",
 		"oF": 2,
 		"oS": 0
 		},
