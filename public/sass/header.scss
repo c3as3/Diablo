@@ -15,16 +15,15 @@ header{
       align-items: center;
 
       li{
-        padding: 36px 2px;
         cursor: pointer;
         a{
           text-align: center;
           text-decoration: none;
-          color: #FF0000;
+          color: white;
           font-size: 24px;
         }
         &:hover{
-          background-color: #BEBEBE;
+          a{color: #FF0000;}
         }
       }
     }
@@ -87,6 +86,12 @@ header{
       display: none;
       background-color: #1E1D1C;
       ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        height: inherit;
+        justify-content: space-around;
+        align-items: center;
         li{
           text-align: center;
           margin: 10px 0;
@@ -107,6 +112,24 @@ header{
         }
       }
     }
+  }
+}
+
+section.siteCall{
+  color: blue;
+  text-align: center;
+  border-top: 2px solid #95989A;
+  border-bottom: 2px solid #95989A;
+  padding: 40px 0;
+}
+
+footer{
+  margin-top: 20px;
+  text-align: center;
+  border-top: 2px solid #95989A;
+
+  h4, p{
+    margin: 15px 0;
   }
 }
 
