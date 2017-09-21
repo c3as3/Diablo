@@ -2,11 +2,11 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-color: #1E1D1C;
   color: #95989A; }
 
 body {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  background-color: #1E1D1C; }
 
 .body-wrap {
   display: grid;
@@ -47,13 +47,21 @@ header {
     border-radius: 50%; }
   header .mobile-nav {
     display: none; }
-    header .mobile-nav .hamburger {
-      position: relative;
-      width: 60px;
+    header .mobile-nav .logo {
+      background-image: url("../img/logo.png");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
       height: 50px;
+      width: 50px;
+      border-radius: 50%; }
+    header .mobile-nav .hamburger {
+      position: absolute;
+      width: 60px;
+      height: 40px;
       cursor: pointer;
       top: 5px;
-      left: 5px; }
+      right: 5px; }
       header .mobile-nav .hamburger span {
         display: flex;
         position: absolute;
@@ -75,7 +83,7 @@ header {
       transform: rotate(138deg); }
     header .mobile-nav .hamburger.open span:nth-child(2) {
       opacity: 0;
-      left: 100px; }
+      left: -100px; }
     header .mobile-nav .hamburger.open span:nth-child(3) {
       top: 15px;
       transform: rotate(-138deg); }
@@ -85,26 +93,24 @@ header {
       header .mobile-nav .mobile-nav-menu ul {
         list-style: none;
         margin: 0;
-        padding: 0;
-        height: inherit;
-        justify-content: space-around;
-        align-items: center; }
+        padding: 0; }
         header .mobile-nav .mobile-nav-menu ul li {
           text-align: center;
           margin: 10px 0; }
           header .mobile-nav .mobile-nav-menu ul li a {
             text-decoration: none;
             font-size: 16px;
-            color: #FF0000; }
+            color: white; }
           header .mobile-nav .mobile-nav-menu ul li:hover {
             cursor: pointer; }
+            header .mobile-nav .mobile-nav-menu ul li:hover a {
+              color: #FF0000; }
         header .mobile-nav .mobile-nav-menu ul li:nth-child(1) {
           margin-top: 0; }
         header .mobile-nav .mobile-nav-menu ul li:nth-child(5) {
           display: none; }
 
 section.siteCall {
-  color: blue;
   text-align: center;
   border-top: 2px solid #95989A;
   border-bottom: 2px solid #95989A;
@@ -119,11 +125,15 @@ footer {
 
 @media screen and (max-width: 620px) {
   header {
-    height: 50px; }
+    height: 50px;
+    position: fixed;
+    top: 0; }
     header .desktop-nav {
       display: none; }
     header .mobile-nav {
-      display: block; } }
+      display: block; }
+  section.siteCall, .body-wrap, footer {
+    margin-top: 50px; } }
 
 section.news {
   grid-column: 2 / 12; }
