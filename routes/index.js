@@ -14,7 +14,14 @@ verify = function (req, res, next){
 }
 
 router.get('/', ctrlDiabloPages.homepage);
+router.get('/about', ctrlDiabloPages.about);
+router.get('/classes', ctrlDiabloPages.classes);
+router.get('/guides', ctrlDiabloPages.guides);
+router.get('/items', ctrlDiabloPages.items);
+router.get('/leaderboards', ctrlDiabloPages.leaderboards);
+router.get('/news', ctrlDiabloPages.news);
 router.get('/messages', ctrlMessage.messages);
+router.get('/twitch', ctrlDiabloPages.twitch);
 router.post('/', ctrlMessage.messageSubmitted);
 
 module.exports = router;
