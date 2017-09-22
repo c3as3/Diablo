@@ -24,6 +24,7 @@ body
       +nav-content 
     
     .mobile-nav
+      .logo
       .hamburger
         span
         span
@@ -31,9 +32,18 @@ body
       .mobile-nav-menu  
         +nav-content  
         
- block content      
+  section.siteCall    
+    h2 Welcome to Tristram Reborn, the Diablo 2 Fan Site built by Twitch Streamers for the Community
+    br
+    h4 Our Goal is to bing the community of Diablo 2 together under a fair, legit, and honest place. We encourage community play, trading, and overall "Fun-ness."
+        
+  .body-wrap      
+    block content      
 
+  footer
+    h4 - - - - - - - - - - Tristram Reborn - - - - - - - - - -
+    p Copyright @ 2017 - Developed by [Michael Diglio] with Contributions by [list of contributors/sponsors]
         
         
   script(src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous")      
-  script(src='../../public/javascript/scripts.js')
+  script(src='/scripts.js')

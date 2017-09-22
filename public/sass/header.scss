@@ -1,7 +1,7 @@
 header{
   height: 100px;
   width: 100vw;
-  background-color: #1E1D1C;
+  background-color: $backgroundBlack;
 
   .desktop-nav{
     ul{
@@ -15,16 +15,15 @@ header{
       align-items: center;
 
       li{
-        padding: 36px 2px;
         cursor: pointer;
         a{
           text-align: center;
           text-decoration: none;
-          color: #FF0000;
+          color: white;
           font-size: 24px;
         }
         &:hover{
-          background-color: #BEBEBE;
+          a{color: $diabloRed;}
         }
       }
     }
@@ -42,13 +41,22 @@ header{
 
   .mobile-nav{
     display: none;
-    .hamburger{
-      position: relative;
-      width: 60px;
+    .logo{
+      background-image: url('../img/logo.png');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
       height: 50px;
+      width: 50px;
+      border-radius: 50%;
+    }
+    .hamburger{
+      position: absolute;
+      width: 60px;
+      height: 40px;
       cursor: pointer;
       top: 5px;
-      left: 5px;
+      right: 20px;
 
       span{
         display: flex;
@@ -77,7 +85,7 @@ header{
     }
     .hamburger.open span:nth-child(2){
       opacity: 0;
-      left: 100px;
+      left: -100px;
     }
     .hamburger.open span:nth-child(3){
       top: 15px;
@@ -87,16 +95,22 @@ header{
       display: none;
       background-color: #1E1D1C;
       ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
         li{
           text-align: center;
           margin: 10px 0;
           a{
             text-decoration: none;
             font-size: 16px;
-            color: #FF0000;
+            color: white;
           }
         &:hover{
           cursor: pointer;
+          a{
+            color: $diabloRed;
+          }
         }
         }
         li:nth-child(1){
@@ -110,9 +124,28 @@ header{
   }
 }
 
+section.siteCall{
+  text-align: center;
+  border-top: 2px solid #95989A;
+  border-bottom: 2px solid #95989A;
+  padding: 40px 0;
+}
+
+footer{
+  margin-top: 20px;
+  text-align: center;
+  border-top: 2px solid #95989A;
+
+  h4, p{
+    margin: 15px 0;
+  }
+}
+
 @media screen and (max-width: 620px){
   header{
     height: 50px;
+    position: fixed;
+    top: 0;
 
     .desktop-nav{
       display: none;
@@ -120,5 +153,8 @@ header{
     .mobile-nav{
       display: block;
     }
+  }
+  section.siteCall, .body-wrap, footer{
+     margin-top: 50px;
   }
 }
