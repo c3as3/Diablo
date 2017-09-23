@@ -1,0 +1,120 @@
+section.classes{
+  grid-column: 2 / 11;
+  text-align: center;
+
+  .classMenu{
+    margin: 40px 0;
+    ul{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+
+      li{
+        cursor: pointer;
+        margin: 10px 10px;
+
+        a{
+          text-decoration: none;
+          color: white;
+          font-size: 22px;
+        }
+        &:hover{
+          a{
+            color: $diabloRed;
+          }
+        }
+      }
+      @media screen and (max-width: 620px){
+        flex-direction: column;
+      }
+    }
+    @media screen and (max-width: 620px){
+      margin: 10px 0;
+    }
+  }
+
+  .classGroup{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px 10px;
+    align-items: center;
+    margin: 40px 0;
+
+    .classIcon{
+      grid-column: 2;
+      height: 200px;
+      width: 150px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin: 20px 0;
+      @media screen and (max-width: 620px){
+        grid-column: 1;
+      }
+    }
+
+    .classInfo{
+      grid-column: 3 / 7;
+      @media screen and (max-width: 620px){
+        grid-column: 1;
+      }
+    }
+    .amazon{
+      background-image: url('../img/Amazon.gif');
+    }
+    .assassin{
+      background-image: url('../img/Assassin.gif');
+    }
+    .barbarian{
+      background-image: url('../img/Barbarian.gif');
+    }
+    .druid{
+      background-image: url('../img/Druid.gif');
+    }
+    .necromancer{
+      background-image: url('../img/Necromancer.gif');
+    }
+    .paladin{
+      background-image: url('../img/Paladin.gif');
+    }
+    .sorceress{
+      background-image: url('../img/Sorceress.gif');
+    }
+    @media screen and (max-width: 620px){
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+
+    .classSkill{
+      height: 200px;
+      width: 200px;
+      background-color: $diabloRed;
+    }
+    .tree1, .tree2, .tree3{
+      margin: 0 20px;
+    }
+    .tree1{
+      grid-column: 3;
+      @media screen and (max-width: 620px){
+        grid-column: 1;
+      }
+    }
+    .tree2{
+      grid-column: 4;
+      @media screen and (max-width: 620px){
+        grid-column: 1;
+      }
+    }
+    .tree3{
+      grid-column: 5;
+      @media screen and (max-width: 620px){
+        grid-column: 1;
+      }
+    }
+  }
+}

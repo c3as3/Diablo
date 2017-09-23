@@ -12,8 +12,7 @@ body {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
-  align-items: center;
-  justify-items: center; }
+  align-items: center; }
 
 header {
   height: 100px;
@@ -222,3 +221,94 @@ section.twitch {
     background-image: url(../img/diglio_profile.png); }
   section.twitch .btneander {
     background-image: url(../img/btneander_profile.png); }
+
+section.classes {
+  grid-column: 2 / 11;
+  text-align: center; }
+  section.classes .classMenu {
+    margin: 40px 0; }
+    section.classes .classMenu ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center; }
+      section.classes .classMenu ul li {
+        cursor: pointer;
+        margin: 10px 10px; }
+        section.classes .classMenu ul li a {
+          text-decoration: none;
+          color: white;
+          font-size: 22px; }
+        section.classes .classMenu ul li:hover a {
+          color: #FF0000; }
+      @media screen and (max-width: 620px) {
+        section.classes .classMenu ul {
+          flex-direction: column; } }
+    @media screen and (max-width: 620px) {
+      section.classes .classMenu {
+        margin: 10px 0; } }
+  section.classes .classGroup {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px 10px;
+    align-items: center;
+    margin: 40px 0; }
+    section.classes .classGroup .classIcon {
+      grid-column: 2;
+      height: 200px;
+      width: 150px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin: 20px 0; }
+      @media screen and (max-width: 620px) {
+        section.classes .classGroup .classIcon {
+          grid-column: 1; } }
+    section.classes .classGroup .classInfo {
+      grid-column: 3 / 7; }
+      @media screen and (max-width: 620px) {
+        section.classes .classGroup .classInfo {
+          grid-column: 1; } }
+    section.classes .classGroup .amazon {
+      background-image: url("../img/Amazon.gif"); }
+    section.classes .classGroup .assassin {
+      background-image: url("../img/Assassin.gif"); }
+    section.classes .classGroup .barbarian {
+      background-image: url("../img/Barbarian.gif"); }
+    section.classes .classGroup .druid {
+      background-image: url("../img/Druid.gif"); }
+    section.classes .classGroup .necromancer {
+      background-image: url("../img/Necromancer.gif"); }
+    section.classes .classGroup .paladin {
+      background-image: url("../img/Paladin.gif"); }
+    section.classes .classGroup .sorceress {
+      background-image: url("../img/Sorceress.gif"); }
+    @media screen and (max-width: 620px) {
+      section.classes .classGroup {
+        grid-template-columns: 1fr;
+        justify-items: center; } }
+    section.classes .classGroup .classSkill {
+      height: 200px;
+      width: 200px;
+      background-color: #FF0000; }
+    section.classes .classGroup .tree1, section.classes .classGroup .tree2, section.classes .classGroup .tree3 {
+      margin: 0 20px; }
+    section.classes .classGroup .tree1 {
+      grid-column: 3; }
+      @media screen and (max-width: 620px) {
+        section.classes .classGroup .tree1 {
+          grid-column: 1; } }
+    section.classes .classGroup .tree2 {
+      grid-column: 4; }
+      @media screen and (max-width: 620px) {
+        section.classes .classGroup .tree2 {
+          grid-column: 1; } }
+    section.classes .classGroup .tree3 {
+      grid-column: 5; }
+      @media screen and (max-width: 620px) {
+        section.classes .classGroup .tree3 {
+          grid-column: 1; } }
