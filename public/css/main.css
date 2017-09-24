@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik");
 *, html, body {
   padding: 0;
   margin: 0;
@@ -6,7 +7,8 @@
 
 body {
   overflow-x: hidden;
-  background-color: #1E1D1C; }
+  background-color: #1E1D1C;
+  font-family: "Rubik", sans-serif; }
 
 .body-wrap {
   display: grid;
@@ -20,7 +22,7 @@ header {
   background-color: #1E1D1C; }
   header .desktop-nav ul {
     list-style: none;
-    margin: 0;
+    margin: 0 20px;
     padding: 0;
     height: inherit;
     display: flex;
@@ -35,6 +37,12 @@ header {
         color: white;
         font-size: 24px;
         margin: 0 10px; }
+        @media screen and (max-width: 750px) {
+          header .desktop-nav ul li a {
+            font-size: 16px; } }
+        @media screen and (min-width: 751px) and (max-width: 900px) {
+          header .desktop-nav ul li a {
+            font-size: 18px; } }
       header .desktop-nav ul li:hover a {
         color: #FF0000; }
   header .desktop-nav .logo {
@@ -42,8 +50,8 @@ header {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100px;
-    width: 100px;
+    min-height: 100px;
+    min-width: 100px;
     border-radius: 50%;
     margin: 0 10px; }
   header .mobile-nav {
@@ -120,11 +128,12 @@ section.siteCall {
 footer {
   margin-top: 20px;
   text-align: center;
-  border-top: 2px solid #95989A; }
+  border-top: 2px solid #95989A;
+  width: 100vw; }
   footer h4, footer p {
     margin: 15px 0; }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 700px) {
   header {
     height: 50px;
     position: fixed;
