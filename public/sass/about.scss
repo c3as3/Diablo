@@ -1,0 +1,45 @@
+section.about{
+  grid-column: 2 / 12;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+  justify-items: center;
+
+  h2, p{
+    grid-column: 1 / 7;
+    margin: 20px 0;
+  }
+
+  h2{
+    text-decoration: underline;
+  }
+
+  .pic{
+    grid-column: 2 / 3;
+    height: 300px;
+    width: 150px;
+    margin: 20px;
+    background-image: url('https://www.fillmurray.com/150/300');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media screen and (max-width: 620px){
+      grid-column: 1;
+    }
+  }
+
+  .bio{
+    grid-column: 3 / 6;
+    margin: 20px;
+
+    @media screen and (max-width: 620px){
+      grid-column: 1;
+    }
+  }
+  @media screen and (max-width: 620px){
+    grid-template-columns: 1fr;
+
+  }
+}

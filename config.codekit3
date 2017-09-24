@@ -191,16 +191,46 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/public\/html\/about.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/html\/about.html",
+		"oF": 0
+		},
+	"\/public\/html\/classes.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/html\/classes.html",
+		"oF": 0
+		},
+	"\/public\/html\/guides.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/html\/guides.html",
+		"oF": 0
+		},
 	"\/public\/html\/index.html": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/public\/html\/index.html",
 		"oF": 0
 		},
+	"\/public\/html\/items.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/html\/items.html",
+		"oF": 0
+		},
 	"\/public\/html\/layout.html": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/public\/html\/layout.html",
+		"oF": 0
+		},
+	"\/public\/html\/leaderboards.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/html\/leaderboards.html",
 		"oF": 0
 		},
 	"\/public\/html\/messages.html": {
@@ -213,6 +243,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/public\/html\/news.html",
+		"oF": 0
+		},
+	"\/public\/html\/twitch.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/html\/twitch.html",
 		"oF": 0
 		},
 	"\/public\/img\/Amazon-Skills.jpg": {
@@ -377,6 +413,32 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/public\/sass\/about.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/public\/sass\/about.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/public\/sass\/classes.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/public\/sass\/classes.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/public\/sass\/header.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -425,6 +487,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/public\/sass\/news.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/public\/sass\/twitch.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/public\/sass\/twitch.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

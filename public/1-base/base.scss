@@ -8,6 +8,7 @@
 body{
   overflow-x: hidden;
   background-color: $backgroundBlack;
+  font-family: $rubik;
 }
 
 .body-wrap{
@@ -15,5 +16,4 @@ body{
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
   align-items: center;
-  justify-items: center;
 }
