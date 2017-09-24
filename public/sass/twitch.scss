@@ -44,4 +44,42 @@ section.twitch{
   .btneander{
     background-image: url(../img/btneander_profile.png);
   }
+
+  .cardContainer{
+    width: 150px;
+    height: 250px;
+    position: relative;
+    perspective: 1000px;
+    margin: 20px 0;
+
+    .streamerCard{
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      transform-style: preserve-3d;
+      transition: transform 1s;
+      transform-origin: center;
+
+      figure{
+        margin: 0;
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+      }
+      // .streamer{
+      //   background-color: $diabloRed;
+      // }
+      .info{
+        background-color: blue;
+        color: $diabloRed;
+        transform: rotateY(180deg);
+        font-size: 24px;
+      }
+      &:hover{
+        transform: rotateY(180deg);
+      }
+    }
+  }
 }

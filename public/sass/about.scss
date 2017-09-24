@@ -20,7 +20,10 @@ section.about{
     height: 300px;
     width: 150px;
     margin: 20px;
-    background-color: $diabloRed;
+    background-image: url('https://www.fillmurray.com/150/300');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 
     @media screen and (max-width: 620px){
       grid-column: 1;

@@ -95,6 +95,13 @@ section.classes{
       width: 200px;
       background-color: $diabloRed;
     }
+    .classSkill.clicked{
+      height: 500px;
+      width: 25vw;
+      @media screen and (max-width: 620px){
+        width: 75vw;
+      }
+    }
     .tree1, .tree2, .tree3{
       margin: 0 20px;
     }

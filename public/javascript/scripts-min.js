@@ -1,1 +1,1 @@
-$(document).ready(function(){$(".hamburger").click(function(){$(this).toggleClass("open"),$(".mobile-nav-menu").slideToggle(500)})});
+$(document).ready(function(){$(".hamburger").click(function(){$(this).toggleClass("open"),$(".mobile-nav-menu").slideToggle(500)}),$(".classSkill").click(function(){$(".classSkill").hasClass("clicked")&&$(this).toggleClass("clicked"),$(this).toggleClass("clicked")})});

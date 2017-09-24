@@ -175,7 +175,10 @@ section.about {
     height: 300px;
     width: 150px;
     margin: 20px;
-    background-color: #FF0000; }
+    background-image: url("https://www.fillmurray.com/150/300");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; }
     @media screen and (max-width: 620px) {
       section.about .pic {
         grid-column: 1; } }
@@ -221,6 +224,33 @@ section.twitch {
     background-image: url(../img/diglio_profile.png); }
   section.twitch .btneander {
     background-image: url(../img/btneander_profile.png); }
+  section.twitch .cardContainer {
+    width: 150px;
+    height: 250px;
+    position: relative;
+    perspective: 1000px;
+    margin: 20px 0; }
+    section.twitch .cardContainer .streamerCard {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      transform-style: preserve-3d;
+      transition: transform 1s;
+      transform-origin: center; }
+      section.twitch .cardContainer .streamerCard figure {
+        margin: 0;
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden; }
+      section.twitch .cardContainer .streamerCard .info {
+        background-color: blue;
+        color: #FF0000;
+        transform: rotateY(180deg);
+        font-size: 24px; }
+      section.twitch .cardContainer .streamerCard:hover {
+        transform: rotateY(180deg); }
 
 section.classes {
   grid-column: 2 / 11;
@@ -295,6 +325,12 @@ section.classes {
       height: 200px;
       width: 200px;
       background-color: #FF0000; }
+    section.classes .classGroup .classSkill.clicked {
+      height: 500px;
+      width: 25vw; }
+      @media screen and (max-width: 620px) {
+        section.classes .classGroup .classSkill.clicked {
+          width: 75vw; } }
     section.classes .classGroup .tree1, section.classes .classGroup .tree2, section.classes .classGroup .tree3 {
       margin: 0 20px; }
     section.classes .classGroup .tree1 {
