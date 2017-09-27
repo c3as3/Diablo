@@ -16,6 +16,119 @@ body {
   grid-template-rows: auto;
   align-items: center; }
 
+html, body {
+  overflow-x: visible; }
+
+section.splash {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  align-content: space-around; }
+  section.splash .background {
+    background-image: url("../img/splash-bg.jpg");
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0.4; }
+  section.splash h1, section.splash h3, section.splash p {
+    grid-column: 1 / 13;
+    margin: 10px;
+    z-index: 2; }
+  section.splash h1 {
+    font-size: 62px;
+    font-style: italic; }
+  section.splash h3 {
+    font-size: 30px; }
+  section.splash .details {
+    position: relative;
+    top: 50px; }
+  section.splash .classContainer {
+    grid-column: 1 / 13;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-column-gap: 20px;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+    top: 100%; }
+    section.splash .classContainer p {
+      font-size: 14px;
+      position: absolute;
+      top: -100px;
+      color: #FF0000;
+      opacity: 0;
+      transition: all 750ms ease-in-out;
+      animation-name: textBubble;
+      animation-iteration-count: 1;
+      animation-duration: 14s; }
+    section.splash .classContainer .classes {
+      position: relative;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 200px;
+      width: 150px; }
+      section.splash .classContainer .classes:hover p {
+        opacity: 1; }
+    section.splash .classContainer .amazon {
+      background-image: url("../img/Amazon.gif"); }
+    section.splash .classContainer .assassin {
+      background-image: url("../img/Assassin.gif"); }
+      section.splash .classContainer .assassin p {
+        animation-delay: 2s; }
+    section.splash .classContainer .necromancer {
+      background-image: url("../img/Necromancer.gif"); }
+      section.splash .classContainer .necromancer p {
+        animation-delay: 4s; }
+    section.splash .classContainer .barbarian {
+      background-image: url("../img/Barbarian.gif"); }
+      section.splash .classContainer .barbarian p {
+        animation-delay: 6s; }
+    section.splash .classContainer .paladin {
+      background-image: url("../img/Paladin.gif"); }
+      section.splash .classContainer .paladin p {
+        animation-delay: 8s; }
+    section.splash .classContainer .sorceress {
+      background-image: url("../img/Sorceress.gif"); }
+      section.splash .classContainer .sorceress p {
+        animation-delay: 10s; }
+    section.splash .classContainer .druid {
+      background-image: url("../img/Druid.gif"); }
+      section.splash .classContainer .druid p {
+        animation-delay: 12s;
+        top: -125px; }
+  section.splash form {
+    grid-column: 1 / 13;
+    position: relative;
+    top: 25%; }
+    section.splash form p, section.splash form input, section.splash form button, section.splash form .g-recaptcha {
+      margin: 10px;
+      font-size: 20px;
+      color: #FF0000; }
+    section.splash form button {
+      padding: 8px; }
+    section.splash form input::placeholder {
+      color: #1E1D1C;
+      font-style: italic; }
+  section.splash .footer {
+    grid-column: 1 / 13;
+    position: relative;
+    top: 350%;
+    border-top: 2px solid #95989A;
+    width: 98vw; }
+  section.splash h4, section.splash p {
+    margin: 10px; }
+
+@keyframes textBubble {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 header {
   height: 100px;
   width: 100vw;
