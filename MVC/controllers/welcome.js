@@ -35,3 +35,7 @@ module.exports.twitch = function(req, res){
   res.render('twitch');
   console.log('Twitch Page Loaded')
 };
+module.exports.splash = function(req, res){
+  res.render('splash');
+  console.log('Splash Page Loaded')
+};

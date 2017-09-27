@@ -85,7 +85,7 @@ module.exports.messageSubmitted = function(req,res)   {
           if(err){
             console.log(err);
             res.render('index');
-            console.log('Get TechBytes')
+            console.log('Get TristramReborn')
           }else{
             console.log('Message saved in MongoDB')
           }
@@ -93,11 +93,11 @@ module.exports.messageSubmitted = function(req,res)   {
         })
 
       }
-      //Message sent to TechBytes Admin
+      //Message sent to TristramReborn Admin
       var mailMessageSubmitted = {
         from: 'FSdiabloBOT@gmail.com',
         to: 'cesar@techbytes.me',
-        subject: 'New Message from TechBytes',
+        subject: 'New Message from TristramReborn',
         html: "<br>"+req.body.name +"<br>"+req.body.email+"<br>"+req.body.message
       }
 
