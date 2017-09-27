@@ -5,6 +5,7 @@ html, body{
 section.splash{
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 100px 50px 50px 1fr 1fr 100px;
   align-items: center;
   justify-items: center;
   text-align: center;
@@ -22,44 +23,62 @@ section.splash{
 
   h1, h3, p{
     grid-column: 1 / 13;
+    justify-content: space-between;
     margin: 10px;
     z-index: 2;
   }
 
   h1{
+    grid-row: 1;
     font-size: 62px;
     font-style: italic;
   }
 
   h3{
+    grid-row: 2;
     font-size: 30px;
   }
 
   .details{
+    grid-row: 3;
     position: relative;
-    top: 50px;
+    color: $diabloRed;
   }
 
   .classContainer{
     grid-column: 1 / 13;
+    grid-row: 5;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-column-gap: 20px;
-    align-items: center;
-    justify-items: center;
+    align-self: end;
     position: relative;
-    top: 100%;
 
     p{
       font-size: 14px;
+      width: 150px;
       position: absolute;
-      top: -100px;
       color: $diabloRed;
       opacity: 0;
       transition: all 750ms ease-in-out;
       animation-name: textBubble;
       animation-iteration-count: 1;
       animation-duration: 14s;
+      border: 2px solid white;
+      border-radius: 15px;
+      background-color: $backgroundBlack;
+      padding: 15px;
+      top: -80px;
+      &::after{
+        content: "";
+        position: absolute;
+        border-width: 8px;
+        border-style: solid;
+        border-color: #1E1D1C transparent transparent #1E1D1C;
+        display: block;
+        width: 0;
+        height: 0;
+      }
     }
 
     .classes{
@@ -77,50 +96,88 @@ section.splash{
     }
     .amazon{
       background-image: url('../img/Amazon.gif');
+      p{
+        top: -100px;
+        &::after{
+          top: 80px;
+          left: 85px;
+        }
+      }
     }
     .assassin{
       background-image: url('../img/Assassin.gif');
       p{
         animation-delay: 2s;
+        top: -150px;
+        &::after{
+          top: 115px;
+          left: 85px;
+        }
       }
     }
     .necromancer{
       background-image: url('../img/Necromancer.gif');
       p{
         animation-delay: 4s;
+        top: -120px;
+        &::after{
+          top: 98px;
+          left: 80px;
+        }
       }
     }
     .barbarian{
       background-image: url('../img/Barbarian.gif');
       p{
         animation-delay: 6s;
+        top: -90px;
+        &::after{
+          top: 64px;
+          left: 80px;
+        }
       }
     }
     .paladin{
       background-image: url('../img/Paladin.gif');
       p{
         animation-delay: 8s;
+        top: -120px;
+        &::after{
+          top: 98px;
+          left: 89px;
+        }
       }
     }
     .sorceress{
       background-image: url('../img/Sorceress.gif');
       p{
         animation-delay: 10s;
+        top: -127px;
+        &::after{
+          top: 115px;
+          left: 70px;
+        }
       }
     }
     .druid{
       background-image: url('../img/Druid.gif');
       p{
         animation-delay: 12s;
-        top: -125px;
+        top: -160px;
+        &::after{
+          top: 132px;
+          left: 70px;
+        }
       }
     }
   }
 
   form{
     grid-column: 1 / 13;
+    grid-row: 4;
     position: relative;
-    top: 25%;
+    margin: 10px;
+    z-index: 10;
 
     p, input, button, .g-recaptcha{
       margin: 10px;
@@ -139,13 +196,15 @@ section.splash{
 
   .footer{
     grid-column: 1 / 13;
+    grid-row: 6;
     position: relative;
-    top: 350%;
-    border-top: 2px solid $silverHighlight;
+    //border-top: 2px solid black;
     width: 98vw;
   }
   h4, p{
     margin: 10px;
+    font-size: 18px;
+    //color: $diabloRed;
   }
 }
 
