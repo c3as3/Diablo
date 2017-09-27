@@ -1,22 +1,65 @@
-hi hello world
 doctype html
 
 head
   meta(charset="utf-8")
   meta(name="viewport", content="width=device-width, initial-scale=1")
-  title Tristram Reborn | Messages
-  link(rel="stylesheet", href="messages.css")
+  title Tristram Reborn | Coming Soon
+  link(rel="stylesheet", href="../css/main.css")
 
-<form  method="POST">
-<p class="first"><input type="text" name="name" placeholder="Name"><br/>
-<p class="email"><input type="text" name="email" placeholder="Email"><br/>
-<button input="submit" value="submit" disabled>Submit</button>
-<div class="g-recaptcha" data-sitekey="6LdQHTEUAAAAAEck5dN_0xuNI97DTZw9YKhPYrx2" data-callback="recaptcha_callback"></div>
-script.
-  function recaptcha_callback() {
-  $('button').removeAttr('disabled');
-  };
-</form>
+//- <form  method="POST">
+//- <p class="first"><input type="text" name="name" placeholder="Name"><br/>
+//- <p class="email"><input type="text" name="email" placeholder="Email"><br/>
+//- <button input="submit" value="submit" disabled>Submit</button>
+//- <div class="g-recaptcha" data-sitekey="6LdQHTEUAAAAAEck5dN_0xuNI97DTZw9YKhPYrx2" data-callback="recaptcha_callback"></div>
+//- script.
+//-   function recaptcha_callback() {
+//-   $('button').removeAttr('disabled');
+//-   };
+//- </form>
+
+
+section.splash
+  .background
+  h1 Tristram Reborn
+  h3 Coming November 2017
+  p.details Get notified when we go live - We are aiming for November Ladder Reset
+  
+  
+  form(method="POST")
+    p.first
+      input(type="text" name="name" placeholder="Name")
+    p.email
+      input(type="text" name="email" placeholder="Email")
+    button(type="submit" value="submit" disabled) Submit
+    div(class='g-recaptcha' data-sitekey="6LdQHTEUAAAAAEck5dN_0xuNI97DTZw9YKhPYrx2" data-callback="recaptcha_callback")
+    script.
+      function recaptcha_callback(){
+        $('button').removeAttr('disabled');
+      };  
+
+  
+  .classContainer
+    .amazon.classes
+      p Tired of using the outdated Arreat Summit?
+    .assassin.classes
+      p Sick of always resorting to Google to find an answer to a simple question?
+    .necromancer.classes
+      p Coming this November, just in time for Ladder Reset...
+    .barbarian.classes
+      p TRISTRAM REBORN
+    .paladin.classes
+      p The new and improved Diablo 2 site for all your needs!
+    .sorceress.classes
+      p Catch your favorite Livestreamers and connect with the community
+    .druid.classes
+      p Sign up to our mailing list to be notified when we launch! We promise not to spam you...Kappa
+
+  .footer
+    h4 - - - - - - - - - - Tristram Reborn - - - - - - - - - -
+    p Copyright @ 2017 - Developed by Michael 'Digs' Diglio and Cesar 'C3as3' Sanchez
+
+  
 
 script(src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous")
 script(src='https://www.google.com/recaptcha/api.js')
+script(src='/scripts.js')

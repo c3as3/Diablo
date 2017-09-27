@@ -41,6 +41,16 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/MVC\/controllers\/subscribe.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/MVC\/controllers\/subscribe-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/MVC\/controllers\/welcome.js": {
 		"ft": 64,
 		"ma": 0,
@@ -133,6 +143,14 @@
 		"oF": 2,
 		"oS": 0
 		},
+	"\/MVC\/views\/splash.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/public\/html\/splash.html",
+		"oF": 2,
+		"oS": 0
+		},
 	"\/MVC\/views\/twitch.jade": {
 		"cOD": 1,
 		"ft": 512,
@@ -177,6 +195,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/public\/2-vars\/_vars.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/public\/3-splash\/splash.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/public\/3-splash\/splash.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -245,6 +276,12 @@
 		"oAP": "\/public\/html\/news.html",
 		"oF": 0
 		},
+	"\/public\/html\/splash.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/html\/splash.html",
+		"oF": 0
+		},
 	"\/public\/html\/twitch.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -277,6 +314,14 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/public\/img\/baal.gif": {
+		"ft": 4194304,
+		"iS": 75915,
+		"oA": 0,
+		"oAP": "\/public\/img\/baal.gif",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/public\/img\/Barbarian.gif": {
 		"ft": 4194304,
 		"iS": 194783,
@@ -295,6 +340,14 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+		},
+	"\/public\/img\/Diablo.gif": {
+		"ft": 4194304,
+		"iS": 81799,
+		"oA": 0,
+		"oAP": "\/public\/img\/Diablo.gif",
+		"oF": 0,
+		"opt": 0
 		},
 	"\/public\/img\/diglio_profile.png": {
 		"ft": 32768,
@@ -392,6 +445,16 @@
 		"oAP": "\/public\/img\/Sorceress.gif",
 		"oF": 0,
 		"opt": 0
+		},
+	"\/public\/img\/splash-bg.jpg": {
+		"ft": 16384,
+		"iS": 239152,
+		"oA": 0,
+		"oAP": "\/public\/img\/splash-bg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/public\/javascript\/scripts-min.js": {
 		"ft": 64,
