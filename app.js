@@ -2,7 +2,11 @@ const express = require ('express');
 const bodyParser = require ('body-parser')
 const path = require('path');
 const expressValidator = require('express-validator');
+const session = require('express-session');
+const MongoStore = require('connect-mongo')(session);
+var cookieParser = require('cookie-parser');
 var app = express();
+require('./MVC/models/db')
 
 /*
 ///////////////////////////////////////
@@ -40,7 +44,7 @@ app.use(function(req, res, next){
 //////////bodyParser Middleware////////
 */
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: false}))
+app.use(bodyParser.urlencoded({extended: true}));
 //Express Validator MiddleWare
 app.use(expressValidator({
   errorFormatter: function(param, msg, value) {
@@ -60,7 +64,15 @@ app.use(expressValidator({
 }));
 
 
-
+app.use(session({
+  secret: 'diablo2',
+  saveUninitialized: 'false',
+  resave: 'false',
+  store: new MongoStore({
+    url: 'mongodb://diabloadmin:rocktheboat@ds139994.mlab.com:39994/diablo',
+    touchAfter: 24 * 3600
+  })
+}));
 /*
 ///////////////////////////////////////
 ///////////////////////////////////////
