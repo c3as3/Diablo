@@ -5,6 +5,8 @@ head
   meta(name="viewport", content="width=device-width, initial-scale=1")
   title Tristram Reborn | Coming Soon
   link(rel="stylesheet", href="../css/main.css")
+  script(src='https://www.google.com/recaptcha/api.js')
+  
 
 //- <form  method="POST">
 //- <p class="first"><input type="text" name="name" placeholder="Name"><br/>
@@ -25,7 +27,14 @@ section.splash
   p.details Get notified when we go live - We are aiming for November Ladder Reset
   
   
-  form(method="POST")
+  form(method="POST" action='/submit')
+    if success
+      h2 Thank you for your Subscription!
+    else
+      if errors
+        ul
+          for error in errors
+            li!= error.msg
     p.first
       input(type="text" name="name" placeholder="Name")
     p.email
@@ -61,5 +70,4 @@ section.splash
   
 
 script(src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous")
-script(src='https://www.google.com/recaptcha/api.js')
 script(src='/scripts.js')

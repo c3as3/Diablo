@@ -3,39 +3,40 @@ var sendJsonResponse = function(res, status, content) {
   res.json(content);
 };
 
-module.exports.homepage = function(req, res){
+module.exports.homepage = function(req, res, next){
   res.render('index');
   console.log('GET Homepage')
 };
-module.exports.about = function(req, res){
+module.exports.about = function(req, res, next){
   res.render('about');
   console.log('About Page Loaded...')
 };
-module.exports.classes = function(req, res){
+module.exports.classes = function(req, res, next){
   res.render('classes');
   console.log('Classes Page Loaded')
 };
-module.exports.guides = function(req, res){
+module.exports.guides = function(req, res, next){
   res.render('guides');
   console.log('Guides Page Loaded')
 };
-module.exports.items = function(req, res){
+module.exports.items = function(req, res, next){
   res.render('items');
   console.log('Items Page Loaded')
 };
-module.exports.leaderboards = function(req, res){
+module.exports.leaderboards = function(req, res, next){
   res.render('leaderboards');
   console.log('Leaderboards Page Loaded')
 };
-module.exports.news = function(req, res){
+module.exports.news = function(req, res, next){
   res.render('news');
   console.log('News Page Loaded')
 };
-module.exports.twitch = function(req, res){
+module.exports.twitch = function(req, res, next){
   res.render('twitch');
   console.log('Twitch Page Loaded')
 };
-module.exports.splash = function(req, res){
-  res.render('splash');
+module.exports.splash = function(req, res, next){
+  res.render('splash', {title: 'Subscribe Now',success: req.session.success, errors: req.session.errors});
+  req.session.errors = null;
   console.log('Splash Page Loaded')
 };
