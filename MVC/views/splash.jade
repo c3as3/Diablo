@@ -6,30 +6,18 @@ head
   title Tristram Reborn | Coming Soon
   link(rel="stylesheet", href="../css/main.css")
   script(src='https://www.google.com/recaptcha/api.js')
-  
-
-//- <form  method="POST">
-//- <p class="first"><input type="text" name="name" placeholder="Name"><br/>
-//- <p class="email"><input type="text" name="email" placeholder="Email"><br/>
-//- <button input="submit" value="submit" disabled>Submit</button>
-//- <div class="g-recaptcha" data-sitekey="6LdQHTEUAAAAAEck5dN_0xuNI97DTZw9YKhPYrx2" data-callback="recaptcha_callback"></div>
-//- script.
-//-   function recaptcha_callback() {
-//-   $('button').removeAttr('disabled');
-//-   };
-//- </form>
 
 
 section.splash
   .background
   h1 Tristram Reborn
-  h3 Coming November 2017
+  h3 -Coming November 2017
   p.details Get notified when we go live - We are aiming for November Ladder Reset
   
   
   form(method="POST" action='/submit')
     if success
-      h2 Thank you for your Subscription!
+      h2.subscribeYes Thank you for your visiting Tristram Reborn <br /> You will receive an email when we are Live <br /> Until then...don't RIP
     else
       if errors
         ul

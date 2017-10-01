@@ -23,10 +23,9 @@ section.splash {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 100px 50px 50px 1fr 1fr 100px;
-  align-items: center;
+  align-items: flex-start;
   justify-items: center;
-  text-align: center;
-  align-content: space-around; }
+  text-align: center; }
   section.splash .background {
     background-image: url("../img/splash-bg.jpg");
     position: fixed;
@@ -42,15 +41,27 @@ section.splash {
     z-index: 2; }
   section.splash h1 {
     grid-row: 1;
+    color: black;
     font-size: 62px;
-    font-style: italic; }
+    font-style: italic;
+    text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #feec85, -20px -20px 40px #ffae34, 20px -40px 50px #ec760c, -20px -60px 60px #cd4606, 0 -80px 70px #973716, 10px -90px 80px #451b0e; }
   section.splash h3 {
     grid-row: 2;
-    font-size: 30px; }
+    font-size: 24px;
+    font-style: italic;
+    color: #9D6025; }
   section.splash .details {
     grid-row: 3;
     position: relative;
     color: #FF0000; }
+  section.splash .subscribeYes {
+    font-size: 36px;
+    max-width: 800px;
+    color: #9D6025;
+    border: 2px solid;
+    border-radius: 10px 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px; }
   section.splash .classContainer {
     grid-column: 1 / 13;
     grid-row: 5;
@@ -162,11 +173,16 @@ section.splash {
     section.splash form input::placeholder {
       color: #1E1D1C;
       font-style: italic; }
+    section.splash form .g-recaptcha {
+      display: block;
+      width: 300px;
+      margin: 20px auto; }
   section.splash .footer {
     grid-column: 1 / 13;
     grid-row: 6;
     position: relative;
-    width: 98vw; }
+    width: 98vw;
+    border-top: 2px solid; }
   section.splash h4, section.splash p {
     margin: 10px;
     font-size: 18px; }
