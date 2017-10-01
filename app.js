@@ -59,15 +59,19 @@ app.use(expressValidator({
       param : formParam,
       msg   : msg,
       value : value
+
     };
   }
 }));
 
-
+var maxAge = (session.cookie||{}).maxAge || 10000;
 app.use(session({
   secret: 'diablo2',
   saveUninitialized: 'false',
   resave: 'false',
+  "cookie": {
+    expires: new Date(Date.now() + maxAge),
+      },
   store: new MongoStore({
     url: 'mongodb://diabloadmin:rocktheboat@ds139994.mlab.com:39994/diablo',
     touchAfter: 24 * 3600
