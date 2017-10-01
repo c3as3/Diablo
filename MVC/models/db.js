@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 var gracefulShutdown;
 var Promise = require("bluebird");
-var dbURI = 'mongodb://cesar:diggyc3as3@tristramreborn.com:28250/diablo'
+var dbURI = 'mongodb://diabloadmin:rocktheboat@ds139994.mlab.com:39994/diablo'
 //Schema creation
 
 if (process.env.NODE_ENV === 'production') {

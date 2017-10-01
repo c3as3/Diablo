@@ -73,7 +73,7 @@ app.use(session({
     expires: new Date(Date.now() + maxAge),
       },
   store: new MongoStore({
-    url: 'mongodb://cesar:diggyc3as3@tristramreborn.com:28250/diablo',
+    url: 'mongodb://diabloadmin:rocktheboat@ds139994.mlab.com:39994/diablo',
     touchAfter: 24 * 3600
   })
 }));
