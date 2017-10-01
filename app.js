@@ -64,7 +64,7 @@ app.use(expressValidator({
   }
 }));
 
-var maxAge = (session.cookie||{}).maxAge || 10000;
+var maxAge = (session.cookie||{}).maxAge || 120000;
 app.use(session({
   secret: 'diablo2',
   saveUninitialized: 'false',
