@@ -1,0 +1,19 @@
+*,html, body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: $silverHighlight;
+}
+
+body{
+  overflow-x: hidden;
+  background-color: $backgroundBlack;
+  font-family: $rubik;
+}
+
+.body-wrap{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  align-items: center;
+}

@@ -1,0 +1,536 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik");
+*, html, body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #95989A; }
+
+body {
+  overflow-x: hidden;
+  background-color: #1E1D1C;
+  font-family: "Rubik", sans-serif; }
+
+.body-wrap {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  align-items: center; }
+
+html, body {
+  overflow-x: visible; }
+
+section.splash {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 100px 50px 50px 1fr 1fr 100px;
+  align-items: flex-start;
+  justify-items: center;
+  text-align: center; }
+  section.splash .background {
+    background-image: url("../img/splash-bg.jpg");
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0.4; }
+  section.splash h1, section.splash h3, section.splash p {
+    grid-column: 1 / 13;
+    justify-content: space-between;
+    margin: 10px;
+    z-index: 2; }
+  section.splash h1 {
+    grid-row: 1;
+    color: black;
+    font-size: 62px;
+    font-style: italic;
+    text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #feec85, -20px -20px 40px #ffae34, 20px -40px 50px #ec760c, -20px -60px 60px #cd4606, 0 -80px 70px #973716, 10px -90px 80px #451b0e; }
+  section.splash h3 {
+    grid-row: 2;
+    font-size: 24px;
+    font-style: italic;
+    color: #9D6025; }
+  section.splash .details {
+    grid-row: 3;
+    position: relative;
+    color: #FF0000; }
+  section.splash .subscribeYes {
+    font-size: 36px;
+    max-width: 800px;
+    color: #9D6025;
+    border: 2px solid;
+    border-radius: 10px 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px; }
+  section.splash .classContainer {
+    grid-column: 1 / 13;
+    grid-row: 5;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-column-gap: 20px;
+    align-self: end;
+    position: relative; }
+    section.splash .classContainer p {
+      font-size: 14px;
+      width: 150px;
+      position: absolute;
+      color: #FF0000;
+      opacity: 0;
+      transition: all 750ms ease-in-out;
+      animation-name: textBubble;
+      animation-iteration-count: 1;
+      animation-duration: 14s;
+      border: 2px solid white;
+      border-radius: 15px;
+      background-color: #1E1D1C;
+      padding: 15px;
+      top: -80px; }
+      section.splash .classContainer p::after {
+        content: "";
+        position: absolute;
+        border-width: 8px;
+        border-style: solid;
+        border-color: #1E1D1C transparent transparent #1E1D1C;
+        display: block;
+        width: 0;
+        height: 0; }
+    section.splash .classContainer .classes {
+      position: relative;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 200px;
+      width: 150px; }
+      section.splash .classContainer .classes:hover p {
+        opacity: 1; }
+    section.splash .classContainer .amazon {
+      background-image: url("../img/Amazon.gif"); }
+      section.splash .classContainer .amazon p {
+        top: -100px; }
+        section.splash .classContainer .amazon p::after {
+          top: 80px;
+          left: 85px; }
+    section.splash .classContainer .assassin {
+      background-image: url("../img/Assassin.gif"); }
+      section.splash .classContainer .assassin p {
+        animation-delay: 2s;
+        top: -150px; }
+        section.splash .classContainer .assassin p::after {
+          top: 115px;
+          left: 85px; }
+    section.splash .classContainer .necromancer {
+      background-image: url("../img/Necromancer.gif"); }
+      section.splash .classContainer .necromancer p {
+        animation-delay: 4s;
+        top: -120px; }
+        section.splash .classContainer .necromancer p::after {
+          top: 98px;
+          left: 80px; }
+    section.splash .classContainer .barbarian {
+      background-image: url("../img/Barbarian.gif"); }
+      section.splash .classContainer .barbarian p {
+        animation-delay: 6s;
+        top: -90px; }
+        section.splash .classContainer .barbarian p::after {
+          top: 64px;
+          left: 80px; }
+    section.splash .classContainer .paladin {
+      background-image: url("../img/Paladin.gif"); }
+      section.splash .classContainer .paladin p {
+        animation-delay: 8s;
+        top: -120px; }
+        section.splash .classContainer .paladin p::after {
+          top: 98px;
+          left: 89px; }
+    section.splash .classContainer .sorceress {
+      background-image: url("../img/Sorceress.gif"); }
+      section.splash .classContainer .sorceress p {
+        animation-delay: 10s;
+        top: -127px; }
+        section.splash .classContainer .sorceress p::after {
+          top: 115px;
+          left: 70px; }
+    section.splash .classContainer .druid {
+      background-image: url("../img/Druid.gif"); }
+      section.splash .classContainer .druid p {
+        animation-delay: 12s;
+        top: -160px; }
+        section.splash .classContainer .druid p::after {
+          top: 132px;
+          left: 70px; }
+  section.splash form {
+    grid-column: 1 / 13;
+    grid-row: 4;
+    position: relative;
+    margin: 10px;
+    z-index: 10; }
+    section.splash form p, section.splash form input, section.splash form button, section.splash form .g-recaptcha {
+      margin: 10px;
+      font-size: 20px;
+      color: #FF0000; }
+    section.splash form button {
+      padding: 8px; }
+    section.splash form input::placeholder {
+      color: #1E1D1C;
+      font-style: italic; }
+    section.splash form .g-recaptcha {
+      display: block;
+      width: 300px;
+      margin: 20px auto; }
+  section.splash .footer {
+    grid-column: 1 / 13;
+    grid-row: 6;
+    position: relative;
+    width: 98vw;
+    border-top: 2px solid; }
+  section.splash h4, section.splash p {
+    margin: 10px;
+    font-size: 18px; }
+
+@keyframes textBubble {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+header {
+  height: 100px;
+  width: 100vw;
+  background-color: #1E1D1C; }
+  header .desktop-nav ul {
+    list-style: none;
+    margin: 0 20px;
+    padding: 0;
+    height: inherit;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center; }
+    header .desktop-nav ul li {
+      cursor: pointer; }
+      header .desktop-nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 24px;
+        margin: 0 10px; }
+        @media screen and (max-width: 750px) {
+          header .desktop-nav ul li a {
+            font-size: 16px; } }
+        @media screen and (min-width: 751px) and (max-width: 900px) {
+          header .desktop-nav ul li a {
+            font-size: 18px; } }
+      header .desktop-nav ul li:hover a {
+        color: #FF0000; }
+  header .desktop-nav .logo {
+    background-image: url("../img/logo.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100px;
+    min-width: 100px;
+    border-radius: 50%;
+    margin: 0 10px; }
+  header .mobile-nav {
+    display: none; }
+    header .mobile-nav .logo {
+      background-image: url("../img/logo.png");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 50px;
+      width: 50px;
+      border-radius: 50%; }
+    header .mobile-nav .hamburger {
+      position: absolute;
+      width: 60px;
+      height: 40px;
+      cursor: pointer;
+      top: 5px;
+      right: 20px; }
+      header .mobile-nav .hamburger span {
+        display: flex;
+        position: absolute;
+        width: 100%;
+        height: 7px;
+        background-color: red;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: all .5s ease-in-out; }
+      header .mobile-nav .hamburger span:nth-child(1) {
+        top: 0px; }
+      header .mobile-nav .hamburger span:nth-child(2) {
+        top: 15px; }
+      header .mobile-nav .hamburger span:nth-child(3) {
+        top: 30px; }
+    header .mobile-nav .hamburger.open span:nth-child(1) {
+      top: 15px;
+      transform: rotate(138deg); }
+    header .mobile-nav .hamburger.open span:nth-child(2) {
+      opacity: 0;
+      left: -100px; }
+    header .mobile-nav .hamburger.open span:nth-child(3) {
+      top: 15px;
+      transform: rotate(-138deg); }
+    header .mobile-nav .mobile-nav-menu {
+      display: none;
+      background-color: #1E1D1C; }
+      header .mobile-nav .mobile-nav-menu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0; }
+        header .mobile-nav .mobile-nav-menu ul li {
+          text-align: center;
+          margin: 10px 0; }
+          header .mobile-nav .mobile-nav-menu ul li a {
+            text-decoration: none;
+            font-size: 16px;
+            color: white; }
+          header .mobile-nav .mobile-nav-menu ul li:hover {
+            cursor: pointer; }
+            header .mobile-nav .mobile-nav-menu ul li:hover a {
+              color: #FF0000; }
+        header .mobile-nav .mobile-nav-menu ul li:nth-child(1) {
+          margin-top: 0; }
+        header .mobile-nav .mobile-nav-menu ul li:nth-child(5) {
+          display: none; }
+
+section.siteCall {
+  text-align: center;
+  border-top: 2px solid #95989A;
+  border-bottom: 2px solid #95989A;
+  padding: 40px 0; }
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  border-top: 2px solid #95989A;
+  width: 98vw; }
+  footer h4, footer p {
+    margin: 15px 0; }
+
+@media screen and (max-width: 700px) {
+  header {
+    height: 50px;
+    position: fixed;
+    top: 0; }
+    header .desktop-nav {
+      display: none; }
+    header .mobile-nav {
+      display: block; }
+  section.siteCall, .body-wrap, footer {
+    margin-top: 50px; } }
+
+section.news {
+  grid-column: 2 / 12; }
+  section.news h2, section.news p {
+    text-align: center; }
+  section.news h2 {
+    margin: 20px 0; }
+  section.news p {
+    margin: 10px 0; }
+  section.news .author {
+    color: #FF0000; }
+
+section.news {
+  grid-column: 2 / 12; }
+  section.news h2, section.news p {
+    text-align: center; }
+  section.news h2 {
+    margin: 20px 0; }
+  section.news p {
+    margin: 10px 0; }
+  section.news .author {
+    color: #FF0000; }
+
+section.about {
+  grid-column: 2 / 12;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+  justify-items: center; }
+  section.about h2, section.about p {
+    grid-column: 1 / 7;
+    margin: 20px 0; }
+  section.about h2 {
+    text-decoration: underline; }
+  section.about .pic {
+    grid-column: 2 / 3;
+    height: 300px;
+    width: 150px;
+    margin: 20px;
+    background-image: url("https://www.fillmurray.com/150/300");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; }
+    @media screen and (max-width: 620px) {
+      section.about .pic {
+        grid-column: 1; } }
+  section.about .bio {
+    grid-column: 3 / 6;
+    margin: 20px; }
+    @media screen and (max-width: 620px) {
+      section.about .bio {
+        grid-column: 1; } }
+  @media screen and (max-width: 620px) {
+    section.about {
+      grid-template-columns: 1fr; } }
+
+section.twitch {
+  grid-column: 2 / 11;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+  justify-items: center;
+  grid-column-gap: 40px; }
+  section.twitch h2 {
+    grid-column: 1 / 7;
+    margin: 20px 0;
+    text-decoration: underline; }
+    @media screen and (max-width: 620px) {
+      section.twitch h2 {
+        grid-column: 1 / 3; } }
+  section.twitch .streamer {
+    height: 250px;
+    width: 150px;
+    margin: 20px 0;
+    background-image: url("https://www.fillmurray.com/150/250");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+  @media screen and (max-width: 620px) {
+    section.twitch {
+      grid-template-columns: 1fr 1fr; } }
+  section.twitch .lumen {
+    background-image: url(../img/lumen_profile.png); }
+  section.twitch .diglio {
+    background-image: url(../img/diglio_profile.png); }
+  section.twitch .btneander {
+    background-image: url(../img/btneander_profile.png); }
+  section.twitch .cardContainer {
+    width: 150px;
+    height: 250px;
+    position: relative;
+    perspective: 1000px;
+    margin: 20px 0; }
+    section.twitch .cardContainer .streamerCard {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      transform-style: preserve-3d;
+      transition: transform 1s;
+      transform-origin: center; }
+      section.twitch .cardContainer .streamerCard figure {
+        margin: 0;
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden; }
+      section.twitch .cardContainer .streamerCard .info {
+        background-color: blue;
+        color: #FF0000;
+        transform: rotateY(180deg);
+        font-size: 24px; }
+      section.twitch .cardContainer .streamerCard:hover {
+        transform: rotateY(180deg); }
+
+section.classes {
+  grid-column: 2 / 11;
+  text-align: center; }
+  section.classes .classMenu {
+    margin: 40px 0; }
+    section.classes .classMenu ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center; }
+      section.classes .classMenu ul li {
+        cursor: pointer;
+        margin: 10px 10px; }
+        section.classes .classMenu ul li a {
+          text-decoration: none;
+          color: white;
+          font-size: 22px; }
+        section.classes .classMenu ul li:hover a {
+          color: #FF0000; }
+      @media screen and (max-width: 620px) {
+        section.classes .classMenu ul {
+          flex-direction: column; } }
+    @media screen and (max-width: 620px) {
+      section.classes .classMenu {
+        margin: 10px 0; } }
+  section.classes .classGroup {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px 10px;
+    align-items: center;
+    margin: 40px 0; }
+    section.classes .classGroup .classIcon {
+      grid-column: 2;
+      height: 200px;
+      width: 150px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin: 20px 0; }
+      @media screen and (max-width: 620px) {
+        section.classes .classGroup .classIcon {
+          grid-column: 1; } }
+    section.classes .classGroup .classInfo {
+      grid-column: 3 / 7; }
+      @media screen and (max-width: 620px) {
+        section.classes .classGroup .classInfo {
+          grid-column: 1; } }
+    section.classes .classGroup .amazon {
+      background-image: url("../img/Amazon.gif"); }
+    section.classes .classGroup .assassin {
+      background-image: url("../img/Assassin.gif"); }
+    section.classes .classGroup .barbarian {
+      background-image: url("../img/Barbarian.gif"); }
+    section.classes .classGroup .druid {
+      background-image: url("../img/Druid.gif"); }
+    section.classes .classGroup .necromancer {
+      background-image: url("../img/Necromancer.gif"); }
+    section.classes .classGroup .paladin {
+      background-image: url("../img/Paladin.gif"); }
+    section.classes .classGroup .sorceress {
+      background-image: url("../img/Sorceress.gif"); }
+    @media screen and (max-width: 620px) {
+      section.classes .classGroup {
+        grid-template-columns: 1fr;
+        justify-items: center; } }
+    section.classes .classGroup .classSkill {
+      height: 200px;
+      width: 200px;
+      background-color: #FF0000; }
+    section.classes .classGroup .classSkill.clicked {
+      height: 500px;
+      width: 25vw; }
+      @media screen and (max-width: 620px) {
+        section.classes .classGroup .classSkill.clicked {
+          width: 75vw; } }
+    section.classes .classGroup .tree1, section.classes .classGroup .tree2, section.classes .classGroup .tree3 {
+      margin: 0 20px; }
+    section.classes .classGroup .tree1 {
+      grid-column: 3; }
+      @media screen and (max-width: 620px) {
+        section.classes .classGroup .tree1 {
+          grid-column: 1; } }
+    section.classes .classGroup .tree2 {
+      grid-column: 4; }
+      @media screen and (max-width: 620px) {
+        section.classes .classGroup .tree2 {
+          grid-column: 1; } }
+    section.classes .classGroup .tree3 {
+      grid-column: 5; }
+      @media screen and (max-width: 620px) {
+        section.classes .classGroup .tree3 {
+          grid-column: 1; } }

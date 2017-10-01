@@ -1,0 +1,19 @@
+section.news{
+  grid-column: 2 / 12;
+
+  h2, p{
+    text-align: center;
+  }
+
+  h2{
+    margin: 20px 0;
+  }
+
+  p{
+    margin: 10px 0;
+  }
+
+  .author{
+    color: $diabloRed;
+  }
+}
