@@ -24,6 +24,12 @@ $(document).ready(function(){
     }, 5000);
   });
 
-
+  $('form button').click(function(){
+    $('form input').remove();
+    $('.g-recaptcha').remove();
+    $(this).remove();
+    $('.footer').css('grid-row', '8');
+    $('.classContainer').css('grid-row', '7');
+  });
 
 });
