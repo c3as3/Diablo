@@ -99,11 +99,14 @@ app.use(express.static(path.join(__dirname, 'public', 'javascript')))
 /////////////////////////////////////////////
 /////////////////////////////////////////////
 */
+
 app.listen(function(port, err){
   var port = 3000;
   if (err){
     console.log('Whoops, there seems to be a problem with the connection');
   }else{
+    (8080, 'localhost');
+    console.log('Server running at http://APP_PRIVATE_IP_ADDRESS:8080/');
   console.log('This server started on port '+ port);
 }})
 module.exports = app;
