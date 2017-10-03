@@ -22,10 +22,13 @@ html, body {
 section.splash {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 100px 50px 50px 1fr 1fr 100px;
+  grid-template-rows: 100px 50px 50px 450px 1fr 100px;
   align-items: flex-start;
   justify-items: center;
   text-align: center; }
+  @media screen and (max-width: 550px) {
+    section.splash {
+      grid-template-rows: 50px 50px 50px 400px 1fr 50px; } }
   section.splash .background {
     background-image: url("../img/splash-bg.jpg");
     position: fixed;
@@ -45,15 +48,24 @@ section.splash {
     font-size: 62px;
     font-style: italic;
     text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #feec85, -20px -20px 40px #ffae34, 20px -40px 50px #ec760c, -20px -60px 60px #cd4606, 0 -80px 70px #973716, 10px -90px 80px #451b0e; }
+    @media screen and (max-width: 550px) {
+      section.splash h1 {
+        font-size: 40px; } }
   section.splash h3 {
     grid-row: 2;
     font-size: 24px;
     font-style: italic;
     color: #9D6025; }
+    @media screen and (max-width: 550px) {
+      section.splash h3 {
+        font-size: 20px; } }
   section.splash .details {
     grid-row: 3;
     position: relative;
     color: #FF0000; }
+    @media screen and (max-width: 550px) {
+      section.splash .details {
+        font-size: 16px; } }
   section.splash .subscribeYes {
     font-size: 36px;
     max-width: 800px;
@@ -63,13 +75,22 @@ section.splash {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 5px; }
   section.splash .classContainer {
-    grid-column: 1 / 13;
+    grid-column: 1 / 13 !important;
     grid-row: 5;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-column-gap: 20px;
     align-self: end;
     position: relative; }
+    @media screen and (max-width: 550px) {
+      section.splash .classContainer {
+        grid-template-columns: 1fr;
+        grid-column-gap: 0; } }
+    @media screen and (max-width: 1100px) and (min-width: 551px) {
+      section.splash .classContainer {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 5px; } }
     section.splash .classContainer p {
       font-size: 14px;
       width: 150px;
@@ -85,6 +106,14 @@ section.splash {
       background-color: #1E1D1C;
       padding: 15px;
       top: -80px; }
+      @media screen and (max-width: 550px) {
+        section.splash .classContainer p {
+          border-radius: 15px 15px 40px 0;
+          top: -75px !important;
+          left: 125px !important; } }
+      @media screen and (max-width: 1100px) and (min-width: 551px) {
+        section.splash .classContainer p {
+          top: -50px !important; } }
       section.splash .classContainer p::after {
         content: "";
         position: absolute;
@@ -94,6 +123,9 @@ section.splash {
         display: block;
         width: 0;
         height: 0; }
+        @media screen and (max-width: 1100px) and (min-width: 551px) {
+          section.splash .classContainer p::after {
+            display: none; } }
     section.splash .classContainer .classes {
       position: relative;
       background-size: contain;
@@ -110,6 +142,12 @@ section.splash {
         section.splash .classContainer .amazon p::after {
           top: 80px;
           left: 85px; }
+      @media screen and (max-width: 1100px) and (min-width: 551px) {
+        section.splash .classContainer .amazon {
+          grid-column: 1; }
+          section.splash .classContainer .amazon p {
+            border-radius: 15px 15px 40px 15px;
+            left: 125px; } }
     section.splash .classContainer .assassin {
       background-image: url("../img/Assassin.gif"); }
       section.splash .classContainer .assassin p {
@@ -118,6 +156,12 @@ section.splash {
         section.splash .classContainer .assassin p::after {
           top: 115px;
           left: 85px; }
+      @media screen and (max-width: 1100px) and (min-width: 551px) {
+        section.splash .classContainer .assassin {
+          grid-column: 4; }
+          section.splash .classContainer .assassin p {
+            border-radius: 15px 15px 15px 40px;
+            left: -135px; } }
     section.splash .classContainer .necromancer {
       background-image: url("../img/Necromancer.gif"); }
       section.splash .classContainer .necromancer p {
@@ -126,6 +170,12 @@ section.splash {
         section.splash .classContainer .necromancer p::after {
           top: 98px;
           left: 80px; }
+      @media screen and (max-width: 1100px) and (min-width: 551px) {
+        section.splash .classContainer .necromancer {
+          grid-column: 1; }
+          section.splash .classContainer .necromancer p {
+            border-radius: 15px 15px 40px 15px;
+            left: 125px; } }
     section.splash .classContainer .barbarian {
       background-image: url("../img/Barbarian.gif"); }
       section.splash .classContainer .barbarian p {
@@ -134,6 +184,12 @@ section.splash {
         section.splash .classContainer .barbarian p::after {
           top: 64px;
           left: 80px; }
+      @media screen and (max-width: 1100px) and (min-width: 551px) {
+        section.splash .classContainer .barbarian {
+          grid-column: 4; }
+          section.splash .classContainer .barbarian p {
+            border-radius: 15px 15px 15px 40px;
+            left: -135px; } }
     section.splash .classContainer .paladin {
       background-image: url("../img/Paladin.gif"); }
       section.splash .classContainer .paladin p {
@@ -142,6 +198,12 @@ section.splash {
         section.splash .classContainer .paladin p::after {
           top: 98px;
           left: 89px; }
+      @media screen and (max-width: 1100px) and (min-width: 551px) {
+        section.splash .classContainer .paladin {
+          grid-column: 1; }
+          section.splash .classContainer .paladin p {
+            border-radius: 15px 15px 40px 15px;
+            left: 125px; } }
     section.splash .classContainer .sorceress {
       background-image: url("../img/Sorceress.gif"); }
       section.splash .classContainer .sorceress p {
@@ -150,6 +212,12 @@ section.splash {
         section.splash .classContainer .sorceress p::after {
           top: 115px;
           left: 70px; }
+      @media screen and (max-width: 1100px) and (min-width: 551px) {
+        section.splash .classContainer .sorceress {
+          grid-column: 4; }
+          section.splash .classContainer .sorceress p {
+            border-radius: 15px 15px 15px 40px;
+            left: -135px; } }
     section.splash .classContainer .druid {
       background-image: url("../img/Druid.gif"); }
       section.splash .classContainer .druid p {
@@ -158,6 +226,12 @@ section.splash {
         section.splash .classContainer .druid p::after {
           top: 132px;
           left: 70px; }
+    @media screen and (max-width: 1100px) {
+      section.splash .classContainer {
+        grid-column: 1; }
+        section.splash .classContainer p {
+          border-radius: 15px 15px 40px 15px;
+          left: 125px; } }
   section.splash form {
     grid-column: 1 / 13;
     grid-row: 4;
@@ -169,7 +243,8 @@ section.splash {
       font-size: 20px;
       color: #FF0000; }
     section.splash form button {
-      padding: 8px; }
+      padding: 8px;
+      cursor: pointer; }
     section.splash form input::placeholder {
       color: #1E1D1C;
       font-style: italic; }
@@ -186,6 +261,9 @@ section.splash {
   section.splash h4, section.splash p {
     margin: 10px;
     font-size: 18px; }
+    @media screen and (max-width: 550px) {
+      section.splash h4, section.splash p {
+        font-size: 12px; } }
 
 @keyframes textBubble {
   0% {

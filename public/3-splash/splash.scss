@@ -5,10 +5,14 @@ html, body{
 section.splash{
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 100px 50px 50px 1fr 1fr 100px;
+  grid-template-rows: 100px 50px 50px 450px 1fr 100px;
   align-items: flex-start;
   justify-items: center;
   text-align: center;
+
+  @media screen and (max-width: 550px){
+    grid-template-rows: 50px 50px 50px 400px 1fr 50px;
+  }
 
   .background{
     background-image: url('../img/splash-bg.jpg');
@@ -33,6 +37,10 @@ section.splash{
     font-size: 62px;
     font-style: italic;
     text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #feec85, -20px -20px 40px #ffae34, 20px -40px 50px #ec760c, -20px -60px 60px #cd4606, 0 -80px 70px #973716, 10px -90px 80px #451b0e;
+
+    @media screen and (max-width: 550px){
+      font-size: 40px;
+    }
   }
 
   h3{
@@ -40,12 +48,20 @@ section.splash{
     font-size: 24px;
     font-style: italic;
     color: #9D6025;
+
+    @media screen and (max-width: 550px){
+      font-size: 20px;
+    }
   }
 
   .details{
     grid-row: 3;
     position: relative;
     color: $diabloRed;
+
+    @media screen and (max-width: 550px){
+      font-size: 16px;
+    }
   }
 
   .subscribeYes{
@@ -59,13 +75,24 @@ section.splash{
   }
 
   .classContainer{
-    grid-column: 1 / 13;
+    grid-column: 1 / 13 !important;
     grid-row: 5;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-column-gap: 20px;
     align-self: end;
     position: relative;
+
+    @media screen and (max-width: 550px){
+      grid-template-columns: 1fr;
+      grid-column-gap: 0;
+    }
+
+    @media screen and (max-width: 1100px) and (min-width: 551px){
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      grid-gap: 5px;
+    }
 
     p{
       font-size: 14px;
@@ -82,6 +109,17 @@ section.splash{
       background-color: $backgroundBlack;
       padding: 15px;
       top: -80px;
+
+      @media screen and (max-width: 550px){
+        border-radius: 15px 15px 40px 0;
+        top: -75px !important;
+        left: 125px !important;
+      }
+
+      @media screen and (max-width: 1100px) and (min-width: 551px){
+        top: -50px !important;
+      }
+
       &::after{
         content: "";
         position: absolute;
@@ -91,6 +129,10 @@ section.splash{
         display: block;
         width: 0;
         height: 0;
+
+        @media screen and (max-width: 1100px) and (min-width: 551px){
+          display: none;
+        }
       }
     }
 
@@ -116,6 +158,13 @@ section.splash{
           left: 85px;
         }
       }
+      @media screen and (max-width: 1100px) and (min-width: 551px){
+        grid-column: 1;
+        p{
+          border-radius: 15px 15px 40px 15px;
+          left: 125px;
+        }
+      }
     }
     .assassin{
       background-image: url('../img/Assassin.gif');
@@ -125,6 +174,13 @@ section.splash{
         &::after{
           top: 115px;
           left: 85px;
+        }
+      }
+      @media screen and (max-width: 1100px) and (min-width: 551px){
+        grid-column: 4;
+        p{
+          border-radius: 15px 15px 15px 40px;
+          left: -135px;
         }
       }
     }
@@ -138,6 +194,13 @@ section.splash{
           left: 80px;
         }
       }
+      @media screen and (max-width: 1100px) and (min-width: 551px){
+        grid-column: 1;
+        p{
+          border-radius: 15px 15px 40px 15px;
+          left: 125px;
+        }
+      }
     }
     .barbarian{
       background-image: url('../img/Barbarian.gif');
@@ -147,6 +210,13 @@ section.splash{
         &::after{
           top: 64px;
           left: 80px;
+        }
+      }
+      @media screen and (max-width: 1100px) and (min-width: 551px){
+        grid-column: 4;
+        p{
+          border-radius: 15px 15px 15px 40px;
+          left: -135px;
         }
       }
     }
@@ -160,6 +230,13 @@ section.splash{
           left: 89px;
         }
       }
+      @media screen and (max-width: 1100px) and (min-width: 551px){
+        grid-column: 1;
+        p{
+          border-radius: 15px 15px 40px 15px;
+          left: 125px;
+        }
+      }
     }
     .sorceress{
       background-image: url('../img/Sorceress.gif');
@@ -169,6 +246,13 @@ section.splash{
         &::after{
           top: 115px;
           left: 70px;
+        }
+      }
+      @media screen and (max-width: 1100px) and (min-width: 551px){
+        grid-column: 4;
+        p{
+          border-radius: 15px 15px 15px 40px;
+          left: -135px;
         }
       }
     }
@@ -181,6 +265,13 @@ section.splash{
           top: 132px;
           left: 70px;
         }
+      }
+    }
+    @media screen and (max-width: 1100px){
+      grid-column: 1;
+      p{
+        border-radius: 15px 15px 40px 15px;
+        left: 125px;
       }
     }
   }
@@ -200,6 +291,7 @@ section.splash{
 
     button{
       padding: 8px;
+      cursor: pointer;
     }
     input::placeholder{
       color: $backgroundBlack;
@@ -224,6 +316,10 @@ section.splash{
     margin: 10px;
     font-size: 18px;
     //color: $diabloRed;
+
+    @media screen and (max-width: 550px){
+      font-size: 12px;
+    }
   }
 }
 
