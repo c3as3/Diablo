@@ -4,10 +4,16 @@ var Promise = require("bluebird");
 var dbURI = 'mongodb://diabloadmin:rocktheboat@ds139994.mlab.com:39994/diablo'
 //Schema creation
 
-if (process.env.NODE_ENV === 'production') {
-  dbURI = process.env.MONGOLAB_URI;
-  console.log(dbURI)
-}
+// if (process.env.NODE_ENV === 'production') {
+//   dbURI = process.env.MONGOLAB_URI;
+//
+//   console.log(dbURI)
+// }
+
+if (process.env.NODE_ENV == 'development')
+dbURI
+else if(process.env.NODE_ENV == 'production')
+dbURI = 'localhost:27017/trsitramReborn'
 
 mongoose.connect(dbURI);
 mongoose.Promise = Promise;
