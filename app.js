@@ -74,7 +74,7 @@ app.use(expressValidator({
 }));
 
 var maxAge = (session.cookie||{}).maxAge || 120000;
-if (process.env.NODE_ENV == 'production') var dbURL = 'localhost:27017/trsitramReborn'
+if (process.env.NODE_ENV == 'production') var dbURL = 'mongodb://localhost:27017/tristramReborn'
 else var dbURL = 'mongodb://diabloadmin:rocktheboat@ds139994.mlab.com:39994/diablo'
 
 

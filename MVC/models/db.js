@@ -13,7 +13,7 @@ var dbURI = 'mongodb://diabloadmin:rocktheboat@ds139994.mlab.com:39994/diablo'
 if (process.env.NODE_ENV == 'development')
 dbURI
 else if(process.env.NODE_ENV == 'production')
-dbURI = 'localhost:27017/trsitramReborn'
+dbURI = 'mongodb://localhost:27017/tristramReborn'
 
 mongoose.connect(dbURI);
 mongoose.Promise = Promise;
