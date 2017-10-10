@@ -8,6 +8,15 @@ var cookieParser = require('cookie-parser');
 var app = express();
 require('./MVC/models/db')
 
+
+// app.use('development', function(){
+//   app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
+// });
+//
+// app.use('production', function(){
+//   app.use(express.errorHandler());
+//
+// });
 /*
 ///////////////////////////////////////
 ///////////////////////////////////////
@@ -65,18 +74,23 @@ app.use(expressValidator({
 }));
 
 var maxAge = (session.cookie||{}).maxAge || 120000;
-app.use(session({
-  secret: 'diablo2',
-  saveUninitialized: 'false',
-  resave: 'false',
-  "cookie": {
-    expires: new Date(Date.now() + maxAge),
-      },
-  store: new MongoStore({
-    url: 'mongodb://diabloadmin:rocktheboat@ds139994.mlab.com:39994/diablo',
-    touchAfter: 24 * 3600
-  })
-}));
+if (process.env.NODE_ENV == 'production') var dbURL = 'mongodb://localhost:27017/tristramReborn'
+else var dbURL = 'mongodb://diabloadmin:rocktheboat@ds139994.mlab.com:39994/diablo'
+
+
+  app.use(session({
+    secret: 'diablo2',
+    saveUninitialized: 'false',
+    resave: 'false',
+    "cookie": {
+      expires: new Date(Date.now() + maxAge),
+        },
+    store: new MongoStore({
+      url: dbURL,
+      touchAfter: 24 * 3600
+    })
+  }));
+
 /*
 ///////////////////////////////////////
 ///////////////////////////////////////
@@ -101,16 +115,15 @@ app.use(express.static(path.join(__dirname, 'public', 'javascript')))
 */
 
 app.listen(function(port, err){
-  var port = 3000;
+  if (process.env.NODE_ENV == 'production') var port = 8080;
+else var port = 3000;
   if (err){
     console.log('Whoops, there seems to be a problem with the connection');
   }else{
-    (8080, 'localhost');
-    console.log('Server running at http://APP_PRIVATE_IP_ADDRESS:8080/');
+    (port, 'localhost');
   console.log('This server started on port '+ port);
 }})
 module.exports = app;
-
 /*
 /////////////////////////////////////////////
 /////////////////////////////////////////////
