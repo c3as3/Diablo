@@ -27,10 +27,6 @@ module.exports.leaderboards = function(req, res, next){
   res.render('leaderboards');
   console.log('Leaderboards Page Loaded')
 };
-module.exports.news = function(req, res, next){
-  res.render('news');
-  console.log('News Page Loaded')
-};
 module.exports.twitch = function(req, res, next){
   res.render('twitch');
   console.log('Twitch Page Loaded')

@@ -3,11 +3,8 @@ var recaptcha = require('express-recaptcha');
 var https = require('https');
 var mongoose = require('mongoose');
 require('../models/db');
+var subscriptionSchema = require('../models/schema');
 
-var subscriptionSchema = mongoose.Schema({
-    name: String,
-    email: String
-});
 
 module.exports.subscribeSubmitted = function(req,res, next)   {
   recaptcha.verify(req, function(error, data){
