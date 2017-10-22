@@ -3,10 +3,6 @@ var sendJsonResponse = function(res, status, content) {
   res.json(content);
 };
 
-module.exports.homepage = function(req, res, next){
-  res.render('index');
-  console.log('GET Homepage')
-};
 module.exports.about = function(req, res, next){
   res.render('about');
   console.log('About Page Loaded...')

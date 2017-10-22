@@ -1,7 +1,8 @@
 require('../../routes/index.js');
 var mongoose = require('mongoose');
 require('../models/db');
-// var newsArticleSchema = require('../models/schema');
+// var newsArticleSchema = require('../models/schema', newsArticleSchema);
+// var Articles = require('../models/models')
 
 var newsArticleSchema = mongoose.Schema({
     title: String,
@@ -9,8 +10,9 @@ var newsArticleSchema = mongoose.Schema({
     date: { type: Date, default: Date.now },
     article: String
 });
-var articles = mongoose.model('articles', newsArticleSchema);
-module.exports = mongoose.model ('News', newsArticleSchema)
+var Articles = mongoose.model('Articles', newsArticleSchema);
+
+
 module.exports.articleSubmitted = function(req,res)   {
   // res.render('index');
 
@@ -35,7 +37,7 @@ module.exports.articleSubmitted = function(req,res)   {
           }
       console.log('New Article Submitted');
 
-      var sendArticle = new article(newArticle);
+      var sendArticle = new Articles(newArticle);
         sendArticle.save(function(err, result){
           if(err){
             console.log(err);
@@ -43,7 +45,7 @@ module.exports.articleSubmitted = function(req,res)   {
             console.log('Article Injection page loaded')
           }else{
             res.render('articleInjection');
-            console.log('Article saved in MongoDB')
+            console.log('Article saved in MongoDB/Articles')
           }
 
         })
