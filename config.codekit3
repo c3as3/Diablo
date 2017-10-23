@@ -31,12 +31,52 @@
 		"oAP": "\/bin\/www",
 		"oF": 0
 		},
+	"\/MVC\/controllers\/articles.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/MVC\/controllers\/articles-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/MVC\/controllers\/homepage.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/MVC\/controllers\/homepage-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/MVC\/controllers\/messages.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/MVC\/controllers\/messages-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/MVC\/controllers\/news.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/MVC\/controllers\/news-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/MVC\/controllers\/pages.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/MVC\/controllers\/pages-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -51,12 +91,12 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"\/MVC\/controllers\/welcome.js": {
+	"\/MVC\/models\/articles.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/MVC\/controllers\/welcome-min.js",
+		"oAP": "\/MVC\/models\/articles-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -71,12 +111,30 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/MVC\/models\/subscription.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/MVC\/models\/subscription-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/MVC\/views\/about.jade": {
 		"cOD": 1,
 		"ft": 512,
 		"oA": 0,
 		"oAP": "\/public\/html\/about.html",
 		"oF": 2,
+		"oS": 0
+		},
+	"\/MVC\/views\/articleInjection.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/MVC\/views\/articleInjection.html",
+		"oF": 0,
 		"oS": 0
 		},
 	"\/MVC\/views\/classes.jade": {
