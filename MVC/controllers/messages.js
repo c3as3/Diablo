@@ -87,7 +87,7 @@ module.exports.messageSubmitted = function(req,res)   {
             res.render('index');
             console.log('Get TristramReborn')
           }else{
-            console.log('Message saved in MongoDB')
+            console.log('Message saved in MongoDB/messages')
           }
 
         })
