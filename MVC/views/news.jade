@@ -5,7 +5,7 @@ block content
    
       - each article in articles
         
-            h2 #{article.title}
-            p Author: #{article.author}
-            p Date Published: #{moment(article.date).format("MM-DD-YYYY h:mm A")}
-            p #{article.article}
+            h2.title #{article.title}
+            p.date #{moment(article.date).format("MM-DD-YYYY")} - Written by #{article.author}
+            p.text #{article.article}
+            //p.author by: #{article.author}
