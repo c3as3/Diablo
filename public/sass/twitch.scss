@@ -1,5 +1,5 @@
 section.twitch{
-  grid-column: 2 / 11;
+  grid-column: 2 / 12;
   text-align: center;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -82,4 +82,35 @@ section.twitch{
       }
     }
   }
+
+  .streamContainer{
+    grid-column: 1 / 7;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: center;
+
+    .streamerContainer{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: 700px;
+      height: 400px;
+      background-color: pink;
+      justify-items: center;
+      align-items: center;
+
+      .streamLogo{
+        background-color: blue;
+      }
+
+      .streamDescription{
+        background-color: orange;
+        color: black;
+        margin: 10px;
+      }
+    }
+  }
+
 }
