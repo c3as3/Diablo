@@ -10,14 +10,7 @@ var app = express();
 require('./MVC/models/db')
 
 
-// app.use('development', function(){
-//   app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
-// });
-//
-// app.use('production', function(){
-//   app.use(express.errorHandler());
-//
-// });
+
 /*
 ///////////////////////////////////////
 ///////////////////////////////////////

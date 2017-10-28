@@ -24,7 +24,15 @@ module.exports.leaderboards = function(req, res, next){
   console.log('Leaderboards Page Loaded')
 };
 module.exports.twitch = function(req, res, next){
-  res.render('twitch');
+  res.render('twitch',{
+    twitchName: null,
+    twitchIcon: null,
+    description: null,
+    facebook: null,
+    twitter: null,
+    discord: null,
+    twitch: null
+  });
   console.log('Twitch Page Loaded')
 };
 module.exports.splash = function(req, res, next){

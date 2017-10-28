@@ -7,7 +7,8 @@ require('../models/db');
 var newsArticleSchema = mongoose.Schema({
     title: String,
     author: String,
-    date: { type: Date, default: Date.now },
+    date: Date,
+    // date: { type: Date, default: Date.now },
     article: String
 });
 var Articles = mongoose.model('Articles', newsArticleSchema);
@@ -33,7 +34,8 @@ module.exports.articleSubmitted = function(req,res)   {
         var newArticle = {
             title: req.body.title,
             author: req.body.author,
-            article: req.body.article
+            article: req.body.article,
+            date: req.body.date
           }
       console.log('New Article Submitted');
 
