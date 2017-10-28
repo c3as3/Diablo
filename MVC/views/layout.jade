@@ -1,10 +1,10 @@
 mixin nav-content()
   ul
+    li.logo
     li: a(href="/") Home
     li: a(href="news") News
     li: a(href="classes") Classes & Skills
     li: a(href="items") Items
-    li.logo
     li: a(href="guides") Guides
     li: a(href="leaderboards") Leaderboards
     li: a(href="twitch") Twitch Streams
@@ -20,11 +20,11 @@ head
   
 body
   header
+    .logo
     .desktop-nav
       +nav-content 
     
     .mobile-nav
-      .logo
       .hamburger
         span
         span

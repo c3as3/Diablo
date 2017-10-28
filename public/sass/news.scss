@@ -5,15 +5,45 @@ section.news{
     text-align: center;
   }
 
-  h2{
-    margin: 20px 0;
+  .title{
+    margin-top: 20px;
+    font-size: 26px;
+    color: #ffffff;
   }
 
-  p{
+  .date{
+    color: orange;
+    font-style: italic;
+    font-size: 14px;
+  }
+
+  .text{
     margin: 10px 0;
+    position: relative;
+    // border-bottom: 1px solid $silverHighlight;
+
+    &:before{
+      content: "";
+      position: absolute;
+      left: 12.5%;
+      bottom: 0;
+      height: 1px;
+      width: 75%;
+      margin-bottom: -15px;
+      border-bottom: 1px solid $silverHighlight;
+    }
   }
 
   .author{
     color: $diabloRed;
+    border-bottom: 1px solid $silverHighlight
+  }
+
+  .author:last-of-type{
+    border-bottom: none;
+  }
+
+  .text:last-of-type{
+    border-bottom: none;
   }
 }

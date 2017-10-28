@@ -3,11 +3,9 @@ var recaptcha = require('express-recaptcha');
 var https = require('https');
 var mongoose = require('mongoose');
 require('../models/db');
-
-var subscriptionSchema = mongoose.Schema({
-    name: String,
-    email: String
-});
+module.exports = function(includeFile){
+    return require('../models/subscription');
+};
 
 module.exports.subscribeSubmitted = function(req,res, next)   {
   recaptcha.verify(req, function(error, data){
@@ -30,7 +28,7 @@ module.exports.subscribeSubmitted = function(req,res, next)   {
           email: req.body.email,
         }
     console.log('New Subscription Submitted');
-    var subscription = mongoose.model('subscription', subscriptionSchema);
+    // var subscription = mongoose.model('subscription', subscriptionSchema);
     var sendSubscription = new subscription(newSubscription);
       sendSubscription.save(function(err, result){
         if(err){
@@ -38,7 +36,7 @@ module.exports.subscribeSubmitted = function(req,res, next)   {
       res.render('splash');
           console.log('Get Splash Page')
         }else{
-          console.log('Subscription saved in MongoDB')
+          console.log('Subscription saved in MongoDB/subscriptions')
         }
 
       })

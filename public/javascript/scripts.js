@@ -18,12 +18,15 @@ $(document).ready(function(){
       }
   });
 
-  $('section.classes classMenu ul li a').click(function(){
-    $('html, body').animate({
-      scrollTop: $(this).attr('href').offset().top
-    }, 5000);
+  $('section.classes classMenu ul li a').click(function(event){
+    event.preventDefault();
+    let $href = $(this).attr('href');
+    let $anchor = $($href).offset();
+    $('body').animate({
+      scrollTop: $anchor.top
+    }, 2500);
   });
-  // 
+  //
   // $('form button').click(function(){
   //   $('form input').remove();
   //   $('.g-recaptcha').remove();
