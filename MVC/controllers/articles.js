@@ -29,6 +29,8 @@ module.exports.articleSubmitted = function(req,res)   {
 
 
       console.log('errors on form ')
+      console.log(errors);
+
       } else{
 
         var newArticle = {
