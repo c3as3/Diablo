@@ -282,7 +282,7 @@ header {
     height: inherit;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     text-align: center; }
     header .desktop-nav ul li {
@@ -299,7 +299,7 @@ header {
           header .desktop-nav ul li a {
             font-size: 18px; } }
       header .desktop-nav ul li:hover a {
-        color: #FF0000; }
+        text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #feec85, -20px -20px 40px #ffae34, 20px -40px 50px #ec760c, -20px -60px 60px #cd4606, 0 -80px 70px #973716, 10px -90px 80px #451b0e; }
   header .desktop-nav .logo {
     background-image: url("../img/logo.png");
     background-size: contain;
@@ -379,6 +379,8 @@ section.siteCall {
   border-top: 2px solid #95989A;
   border-bottom: 2px solid #95989A;
   padding: 40px 0; }
+  section.siteCall h2, section.siteCall h4 {
+    color: orange; }
 
 footer {
   margin-top: 20px;
@@ -404,23 +406,33 @@ section.news {
   grid-column: 2 / 12; }
   section.news h2, section.news p {
     text-align: center; }
-  section.news h2 {
-    margin: 20px 0; }
-  section.news p {
-    margin: 10px 0; }
+  section.news .title {
+    margin-top: 20px;
+    font-size: 26px;
+    color: #ffffff; }
+  section.news .date {
+    color: orange;
+    font-style: italic;
+    font-size: 14px; }
+  section.news .text {
+    margin: 10px 0;
+    position: relative; }
+    section.news .text:before {
+      content: "";
+      position: absolute;
+      left: 12.5%;
+      bottom: 0;
+      height: 1px;
+      width: 75%;
+      margin-bottom: -15px;
+      border-bottom: 1px solid #95989A; }
   section.news .author {
-    color: #FF0000; }
-
-section.news {
-  grid-column: 2 / 12; }
-  section.news h2, section.news p {
-    text-align: center; }
-  section.news h2 {
-    margin: 20px 0; }
-  section.news p {
-    margin: 10px 0; }
-  section.news .author {
-    color: #FF0000; }
+    color: #FF0000;
+    border-bottom: 1px solid #95989A; }
+  section.news .author:last-of-type {
+    border-bottom: none; }
+  section.news .text:last-of-type {
+    border-bottom: none; }
 
 section.about {
   grid-column: 2 / 12;
@@ -457,7 +469,7 @@ section.about {
       grid-template-columns: 1fr; } }
 
 section.twitch {
-  grid-column: 2 / 11;
+  grid-column: 2 / 12;
   text-align: center;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -515,9 +527,31 @@ section.twitch {
         font-size: 24px; }
       section.twitch .cardContainer .streamerCard:hover {
         transform: rotateY(180deg); }
+  section.twitch .streamContainer {
+    grid-column: 1 / 7;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: center; }
+    section.twitch .streamContainer .streamerContainer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: 700px;
+      height: 400px;
+      background-color: pink;
+      justify-items: center;
+      align-items: center; }
+      section.twitch .streamContainer .streamerContainer .streamLogo {
+        background-color: blue; }
+      section.twitch .streamContainer .streamerContainer .streamDescription {
+        background-color: orange;
+        color: black;
+        margin: 10px; }
 
 section.classes {
-  grid-column: 2 / 11;
+  grid-column: 2 / 12;
   text-align: center; }
   section.classes .classMenu {
     margin: 40px 0; }
@@ -527,7 +561,7 @@ section.classes {
       padding: 0;
       display: flex;
       flex-wrap: nowrap;
-      justify-content: space-around;
+      justify-content: space-evenly;
       align-items: center;
       text-align: center; }
       section.classes .classMenu ul li {
@@ -554,7 +588,6 @@ section.classes {
     section.classes .classGroup .classIcon {
       grid-column: 2;
       height: 200px;
-      width: 150px;
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
@@ -612,3 +645,21 @@ section.classes {
       @media screen and (max-width: 620px) {
         section.classes .classGroup .tree3 {
           grid-column: 1; } }
+
+section.leaderboards {
+  grid-column: 2 / 12;
+  text-align: center; }
+  section.leaderboards h2, section.leaderboards p {
+    margin: 20px 0; }
+
+section.guides {
+  grid-column: 2 / 12;
+  text-align: center; }
+  section.guides h2, section.guides p {
+    margin: 20px 0; }
+
+section.items {
+  grid-column: 2 / 12;
+  text-align: center; }
+  section.items h2, section.items p {
+    margin: 20px 0; }

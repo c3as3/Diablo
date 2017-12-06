@@ -3,10 +3,6 @@ var sendJsonResponse = function(res, status, content) {
   res.json(content);
 };
 
-module.exports.homepage = function(req, res, next){
-  res.render('index');
-  console.log('GET Homepage')
-};
 module.exports.about = function(req, res, next){
   res.render('about');
   console.log('About Page Loaded...')
@@ -27,12 +23,16 @@ module.exports.leaderboards = function(req, res, next){
   res.render('leaderboards');
   console.log('Leaderboards Page Loaded')
 };
-module.exports.news = function(req, res, next){
-  res.render('news');
-  console.log('News Page Loaded')
-};
 module.exports.twitch = function(req, res, next){
-  res.render('twitch');
+  res.render('twitch',{
+    twitchName: null,
+    twitchIcon: null,
+    description: null,
+    facebook: null,
+    twitter: null,
+    discord: null,
+    twitch: null
+  });
   console.log('Twitch Page Loaded')
 };
 module.exports.splash = function(req, res, next){
