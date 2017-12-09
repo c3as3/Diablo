@@ -8,7 +8,12 @@
 body {
   overflow-x: hidden;
   background-color: #1E1D1C;
-  font-family: "Rubik", sans-serif; }
+  font-family: "Rubik", sans-serif;
+  background-image: url(../img/splash-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
 
 .body-wrap {
   display: grid;

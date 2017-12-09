@@ -9,6 +9,12 @@ body{
   overflow-x: hidden;
   background-color: $backgroundBlack;
   font-family: $rubik;
+  background-image: url(../img/splash-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
 }
 
 .body-wrap{
