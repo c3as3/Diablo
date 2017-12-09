@@ -10,9 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/c3as3/Diablo.git"
   },
-  "env_production" : {
-  "NODE_ENV": "production"
-},
+  "env_production": {
+    "NODE_ENV": "production"
+  },
   "keywords": [
     "Diablo",
     "Fan",

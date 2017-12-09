@@ -7,6 +7,7 @@ var ctrlSubscribe = require('../MVC/controllers/subscribe.js');
 var ctrlArticle = require('../MVC/controllers/articles.js')
 var ctrlNewsFeed = require('../MVC/controllers/news.js')
 var ctrlHomepage = require('../MVC/controllers/homepage.js');
+var ctrltwitchUsers = require('../MVC/controllers/twitchUsers.js')
 
 //ReCaptcha MiddleWare
 recaptcha.init('6LdQHTEUAAAAAEck5dN_0xuNI97DTZw9YKhPYrx2', '6LdQHTEUAAAAAJBSZRxCsHavkmIcFkn8PuXadE0c');
@@ -18,9 +19,9 @@ verify = function (req, res, next){
 };
 
 
-//Comment out .homepage controller to start splash and vice-versa to start at homepage
-router.get('/homepage', ctrlHomepage.homepage);
-router.get('/', ctrlDiabloPages.splash);
+//Comment out .homepage controller to start splash and vice-versa to start at homepage(remove homepage from /)
+router.get('/', ctrlHomepage.homepage);
+// router.get('/', ctrlDiabloPages.splash);
 router.get('/about', ctrlDiabloPages.about);
 router.get('/classes', ctrlDiabloPages.classes);
 router.get('/guides', ctrlDiabloPages.guides);
@@ -33,4 +34,6 @@ router.post('/submit', ctrlSubscribe.subscribeSubmitted);
 router.post('/messages', ctrlMessage.messageSubmitted);
 router.post('/articleInjection', ctrlArticle.articleSubmitted);
 router.get('/articleInjection', ctrlArticle.articlesForm);
+router.post('/twitchUsers', ctrltwitchUsers.twitchUsersSubmitted);
+router.get('/twitchUsers', ctrltwitchUsers.twitchUsers);
 module.exports = router;
