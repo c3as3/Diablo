@@ -4,6 +4,7 @@ require('../models/db');
 
 
 
+
 var twitchUserSchema = mongoose.Schema({
     username: String,
     twitter: String,
