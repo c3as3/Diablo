@@ -29,6 +29,7 @@ module.exports.twitchUsersSubmitted = function(req,res)   {
       if (errors) {
 
 
+
       console.log('errors on form ')
       } else{
 

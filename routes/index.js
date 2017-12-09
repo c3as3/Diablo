@@ -7,7 +7,7 @@ var ctrlSubscribe = require('../MVC/controllers/subscribe.js');
 var ctrlArticle = require('../MVC/controllers/articles.js')
 var ctrlNewsFeed = require('../MVC/controllers/news.js')
 var ctrlHomepage = require('../MVC/controllers/homepage.js');
-var ctrltwitchUsers = require('../MVC/controllers/twitchUsers.js')
+var ctrltwitchUsers = require('../MVC/controllers/twitchusers.js')
 
 //ReCaptcha MiddleWare
 recaptcha.init('6LdQHTEUAAAAAEck5dN_0xuNI97DTZw9YKhPYrx2', '6LdQHTEUAAAAAJBSZRxCsHavkmIcFkn8PuXadE0c');
