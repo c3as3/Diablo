@@ -16,7 +16,7 @@ else if(process.env.NODE_ENV == 'production')
 dbURI = 'mongodb://localhost:27017/tristramReborn'
 
 //production
-var dbURI = 'mongodb://localhost:27017/tristramReborn'
+//var dbURI = 'mongodb://localhost:27017/tristramReborn'
 
 
 
