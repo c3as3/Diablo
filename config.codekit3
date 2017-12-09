@@ -7,9 +7,10 @@
 		"uuidString": "90CD071B-0D00-4343-ADFA-D2F174547D65"
 		}
 	],
-"creatorBuild": "25900",
+"creatorBuild": "26148",
 "files": {
 	"\/.gitattributes": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/.gitattributes",
@@ -26,6 +27,7 @@
 		"tS": 0
 		},
 	"\/bin\/www": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/bin\/www",
@@ -91,6 +93,16 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/MVC\/controllers\/twitchusers.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/MVC\/controllers\/twitchusers-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/MVC\/models\/articles.js": {
 		"ft": 64,
 		"ma": 0,
@@ -122,6 +134,7 @@
 		"tS": 0
 		},
 	"\/MVC\/views\/about.jade": {
+		"cB": 0,
 		"cOD": 1,
 		"ft": 512,
 		"oA": 0,
@@ -130,6 +143,7 @@
 		"oS": 0
 		},
 	"\/MVC\/views\/articleInjection.jade": {
+		"cB": 0,
 		"cOD": 1,
 		"ft": 512,
 		"oA": 0,
@@ -138,6 +152,7 @@
 		"oS": 0
 		},
 	"\/MVC\/views\/classes.jade": {
+		"cB": 0,
 		"cOD": 1,
 		"ft": 512,
 		"oA": 0,
@@ -146,6 +161,7 @@
 		"oS": 0
 		},
 	"\/MVC\/views\/guides.jade": {
+		"cB": 0,
 		"cOD": 1,
 		"ft": 512,
 		"oA": 0,
@@ -154,6 +170,7 @@
 		"oS": 0
 		},
 	"\/MVC\/views\/index.jade": {
+		"cB": 0,
 		"cOD": 1,
 		"ft": 512,
 		"oA": 0,
@@ -162,6 +179,7 @@
 		"oS": 0
 		},
 	"\/MVC\/views\/items.jade": {
+		"cB": 0,
 		"cOD": 1,
 		"ft": 512,
 		"oA": 0,
@@ -170,6 +188,7 @@
 		"oS": 0
 		},
 	"\/MVC\/views\/layout.jade": {
+		"cB": 0,
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
@@ -178,6 +197,7 @@
 		"oS": 0
 		},
 	"\/MVC\/views\/leaderboards.jade": {
+		"cB": 0,
 		"cOD": 1,
 		"ft": 512,
 		"oA": 0,
@@ -186,6 +206,7 @@
 		"oS": 0
 		},
 	"\/MVC\/views\/messages.jade": {
+		"cB": 0,
 		"cOD": 1,
 		"ft": 512,
 		"oA": 0,
@@ -194,6 +215,7 @@
 		"oS": 0
 		},
 	"\/MVC\/views\/news.jade": {
+		"cB": 0,
 		"cOD": 1,
 		"ft": 512,
 		"oA": 0,
@@ -202,6 +224,7 @@
 		"oS": 0
 		},
 	"\/MVC\/views\/splash.jade": {
+		"cB": 0,
 		"cOD": 1,
 		"ft": 512,
 		"oA": 0,
@@ -210,11 +233,21 @@
 		"oS": 0
 		},
 	"\/MVC\/views\/twitch.jade": {
+		"cB": 0,
 		"cOD": 1,
 		"ft": 512,
 		"oA": 0,
 		"oAP": "\/public\/html\/twitch.html",
 		"oF": 2,
+		"oS": 0
+		},
+	"\/MVC\/views\/twitchUsers.jade": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/MVC\/views\/twitchUsers.html",
+		"oF": 0,
 		"oS": 0
 		},
 	"\/node_modules": {
@@ -281,66 +314,77 @@
 		"oS": 3
 		},
 	"\/public\/html\/about.html": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/public\/html\/about.html",
 		"oF": 0
 		},
 	"\/public\/html\/classes.html": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/public\/html\/classes.html",
 		"oF": 0
 		},
 	"\/public\/html\/guides.html": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/public\/html\/guides.html",
 		"oF": 0
 		},
 	"\/public\/html\/index.html": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/public\/html\/index.html",
 		"oF": 0
 		},
 	"\/public\/html\/items.html": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/public\/html\/items.html",
 		"oF": 0
 		},
 	"\/public\/html\/layout.html": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/public\/html\/layout.html",
 		"oF": 0
 		},
 	"\/public\/html\/leaderboards.html": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/public\/html\/leaderboards.html",
 		"oF": 0
 		},
 	"\/public\/html\/messages.html": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/public\/html\/messages.html",
 		"oF": 0
 		},
 	"\/public\/html\/news.html": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/public\/html\/news.html",
 		"oF": 0
 		},
 	"\/public\/html\/splash.html": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/public\/html\/splash.html",
 		"oF": 0
 		},
 	"\/public\/html\/twitch.html": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/public\/html\/twitch.html",
@@ -511,7 +555,18 @@
 		"oAP": "\/public\/img\/splash-bg.jpg",
 		"oF": 0,
 		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/public\/img\/splash-bg.png": {
+		"ft": 32768,
+		"iS": 688842,
+		"oA": 0,
+		"oAP": "\/public\/img\/splash-bg.png",
+		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/public\/javascript\/scripts-min.js": {
@@ -1219,6 +1274,10 @@
 			"active": 0,
 			"optionString": "'expression'"
 			},
+		"function-paren-newline": {
+			"active": 0,
+			"optionString": "'multiline'"
+			},
 		"generator-star-spacing": {
 			"active": 0,
 			"optionString": "{'before': true, 'after': false}"
@@ -1283,9 +1342,9 @@
 			"active": 0,
 			"optionString": "{'beforeBlockComment': true}"
 			},
-		"lines-around-directive": {
+		"lines-between-class-members": {
 			"active": 0,
-			"optionString": "{'before': 'always', 'after': 'always'}"
+			"optionString": "'always', {exceptAfterSingleLine: false}"
 			},
 		"max-depth": {
 			"active": 0,
@@ -1315,6 +1374,10 @@
 			"active": 0,
 			"optionString": "{'max': 1}"
 			},
+		"multiline-comment-style": {
+			"active": 0,
+			"optionString": "'starred-block'"
+			},
 		"multiline-ternary": {
 			"active": 0,
 			"optionString": "'always'"
@@ -1324,14 +1387,6 @@
 			"optionString": "{'newIsCap': true, 'capIsNew': true, 'newIsCapExceptions': [], 'capIsNewExceptions': ['Array', 'Boolean', 'Date', 'Error', 'Function', 'Number', 'Object', 'RegExp', 'String', 'Symbol'], 'properties': true}"
 			},
 		"new-parens": {
-			"active": 0,
-			"optionString": ""
-			},
-		"newline-after-var": {
-			"active": 0,
-			"optionString": "'always'"
-			},
-		"newline-before-return": {
 			"active": 0,
 			"optionString": ""
 			},
@@ -2435,7 +2490,8 @@
 		"createSourceMap": 0,
 		"minifyOutput": 1,
 		"outputStyle": 0,
-		"syntaxCheckerStyle": 1
+		"syntaxCheckerStyle": 1,
+		"transpilerStyle": 1
 		},
 	"languageDefaultsCSS": {
 		"autoOutputAction": 0,
@@ -2468,6 +2524,7 @@
 		"noEscapeInAttributes": 0,
 		"outputFormat": 2,
 		"outputStyle": 0,
+		"shouldRunCacheBuster": 0,
 		"useCDATA": 0,
 		"useDoubleQuotes": 0,
 		"useUnixNewlines": 0
@@ -2509,7 +2566,8 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "kit",
 		"autoOutputPathReplace2": "html",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"shouldRunCacheBuster": 0
 		},
 	"languageDefaultsLESS": {
 		"allowInsecureImports": 0,
@@ -2541,13 +2599,13 @@
 		"enableFootnotes": 1,
 		"enableLabels": 1,
 		"enableSmartQuotes": 1,
-		"escapeLineBreaks": 0,
 		"maskEmailAddresses": 1,
 		"outputFormat": 0,
 		"outputStyle": 0,
 		"parseMetadata": 1,
 		"processHTML": 0,
 		"randomFootnoteNumbers": 0,
+		"shouldRunCacheBuster": 0,
 		"useCompatibilityMode": 0
 		},
 	"languageDefaultsOTHER": {
@@ -2556,7 +2614,8 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"shouldRunCacheBuster": 0
 		},
 	"languageDefaultsPNG": {
 		"autoOutputAction": 0,
@@ -2576,7 +2635,8 @@
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
 		"compileDebug": 1,
-		"outputStyle": 0
+		"outputStyle": 0,
+		"shouldRunCacheBuster": 0
 		},
 	"languageDefaultsSASS": {
 		"autoOutputAction": 0,
@@ -2604,7 +2664,8 @@
 		"logicless": 0,
 		"outputFormat": 0,
 		"outputStyle": 1,
-		"railsCompatible": 0
+		"railsCompatible": 0,
+		"shouldRunCacheBuster": 0
 		},
 	"languageDefaultsSTYLUS": {
 		"autoOutputAction": 0,
