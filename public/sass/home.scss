@@ -8,7 +8,7 @@ section.home{
   .title{
     margin-top: 20px;
     font-size: 26px;
-    color: #ffffff;
+    color: $diabloRed;
   }
 
   .date{
@@ -20,6 +20,7 @@ section.home{
   .text{
     margin: 10px 0;
     position: relative;
+    color: silver;
     // border-bottom: 1px solid $silverHighlight;
 
     &:before{
@@ -29,7 +30,7 @@ section.home{
       bottom: 0;
       height: 1px;
       width: 75%;
-      margin-bottom: -15px;
+      margin: -10px;
       border-bottom: 1px solid $silverHighlight;
     }
   }
