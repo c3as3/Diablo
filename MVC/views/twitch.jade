@@ -3,82 +3,82 @@ extends layout
 block content 
   section.twitch
     
-    h2 Online
+    //- h2 Online
+    //- 
+    //- .streamer.lumen
+    //- .streamer.diglio
+    //- .streamer.btneander
+    //- 
+    //- h2 Offline
+    //- 
+    //- .streamer
+    //- .streamer
+    //- .streamer
+    //- .streamer
+    //- .streamer
+    //- .streamer
+    //- .streamer
     
-    .streamer.lumen
-    .streamer.diglio
-    .streamer.btneander
-    
-    h2 Offline
-    
-    .streamer
-    .streamer
-    .streamer
-    .streamer
-    .streamer
-    .streamer
-    .streamer
-    
-    h2 Testing
-    
-    .cardContainer
-      .streamerCard
-        figure.streamer.lumen
-        figure.info Lumen_BR
-          h3 Schedule:
-          p 11am - 10pm 7x/week
-    .cardContainer
-      .streamerCard
-        figure.streamer.diglio
-        figure.info Testing the Flip
-    .cardContainer
-      .streamerCard
-        figure.streamer.btneander
-        figure.info Testing the Flip
-    .cardContainer
-      .streamerCard
-        figure.streamer
-        figure.info Testing the Flip
-        
-    
+    //- h2 Testing
+    //- 
+    //- .cardContainer
+    //-   .streamerCard
+    //-     figure.streamer.lumen
+    //-     figure.info Lumen_BR
+    //-       h3 Schedule:
+    //-       p 11am - 10pm 7x/week
+    //- .cardContainer
+    //-   .streamerCard
+    //-     figure.streamer.diglio
+    //-     figure.info Testing the Flip
+    //- .cardContainer
+    //-   .streamerCard
+    //-     figure.streamer.btneander
+    //-     figure.info Testing the Flip
+    //- .cardContainer
+    //-   .streamerCard
+    //-     figure.streamer
+    //-     figure.info Testing the Flip
+    //- 
+    //- 
     h2 More Testing
     
     .streamContainer
-      .streamerContainer
-        .streamLogo.streamer
-        p.streamDescription.
-          Do nulla voluptatibus de do dolore quamquam non probant non arbitror, deserunt 
-          enim quamquam ullamco iis iis an philosophari, te multos vidisse ab commodo 
-          exercitation non quamquam quo sed quorum amet est eiusmod. Nam culpa sunt dolor 
-          occaecat et si sed quae veniam anim in de irure philosophari quo incurreret quid 
-      .streamerContainer
-        .streamLogo.streamer
-        p.streamDescription.
-          Do nulla voluptatibus de do dolore quamquam non probant non arbitror, deserunt 
-          enim quamquam ullamco iis iis an philosophari, te multos vidisse ab commodo 
-          exercitation non quamquam quo sed quorum amet est eiusmod. Nam culpa sunt dolor 
-          occaecat et si sed quae veniam anim in de irure philosophari quo incurreret quid 
-      .streamerContainer
-        .streamLogo.streamer
-        p.streamDescription.
-          Do nulla voluptatibus de do dolore quamquam non probant non arbitror, deserunt 
-          enim quamquam ullamco iis iis an philosophari, te multos vidisse ab commodo 
-          exercitation non quamquam quo sed quorum amet est eiusmod. Nam culpa sunt dolor 
-          occaecat et si sed quae veniam anim in de irure philosophari quo incurreret quid 
-      .streamerContainer
-        .streamLogo.streamer
-        p.streamDescription.
-          Do nulla voluptatibus de do dolore quamquam non probant non arbitror, deserunt 
-          enim quamquam ullamco iis iis an philosophari, te multos vidisse ab commodo 
-          exercitation non quamquam quo sed quorum amet est eiusmod. Nam culpa sunt dolor 
-          occaecat et si sed quae veniam anim in de irure philosophari quo incurreret quid 
-      .streamerContainer
-        .streamLogo.streamer
-        p.streamDescription.
-          Do nulla voluptatibus de do dolore quamquam non probant non arbitror, deserunt 
-          enim quamquam ullamco iis iis an philosophari, te multos vidisse ab commodo 
-          exercitation non quamquam quo sed quorum amet est eiusmod. Nam culpa sunt dolor 
-          occaecat et si sed quae veniam anim in de irure philosophari quo incurreret quid 
-
-    
-        
+      .streamerContainer        
+          each twitchuser in twitchusers
+              p #{twitchuser.username}
+              p #{twitchuser.discord}
+              p #{twitchuser.twitter}
+              p #{twitchuser.description}
+              
+      //- .streamerContainer
+      //-   .streamLogo.streamer
+      //-   p.streamDescription.
+      //-     Do nulla voluptatibus de do dolore quamquam non probant non arbitror, deserunt 
+      //-     enim quamquam ullamco iis iis an philosophari, te multos vidisse ab commodo 
+      //-     exercitation non quamquam quo sed quorum amet est eiusmod. Nam culpa sunt dolor 
+      //-     occaecat et si sed quae veniam anim in de irure philosophari quo incurreret quid 
+      //- .streamerContainer
+      //-   .streamLogo.streamer
+      //-   p.streamDescription.
+      //-     Do nulla voluptatibus de do dolore quamquam non probant non arbitror, deserunt 
+      //-     enim quamquam ullamco iis iis an philosophari, te multos vidisse ab commodo 
+      //-     exercitation non quamquam quo sed quorum amet est eiusmod. Nam culpa sunt dolor 
+      //-     occaecat et si sed quae veniam anim in de irure philosophari quo incurreret quid 
+      //- .streamerContainer
+      //-   .streamLogo.streamer
+      //-   p.streamDescription.
+      //-     Do nulla voluptatibus de do dolore quamquam non probant non arbitror, deserunt 
+      //-     enim quamquam ullamco iis iis an philosophari, te multos vidisse ab commodo 
+      //-     exercitation non quamquam quo sed quorum amet est eiusmod. Nam culpa sunt dolor 
+      //-     occaecat et si sed quae veniam anim in de irure philosophari quo incurreret quid 
+      //- .streamerContainer
+      //-   .streamLogo.streamer
+      //-   p.streamDescription.
+      //-     Do nulla voluptatibus de do dolore quamquam non probant non arbitror, deserunt 
+      //-     enim quamquam ullamco iis iis an philosophari, te multos vidisse ab commodo 
+      //-     exercitation non quamquam quo sed quorum amet est eiusmod. Nam culpa sunt dolor 
+      //-     occaecat et si sed quae veniam anim in de irure philosophari quo incurreret quid 
+      //- 
+      //- 
+      //- 

@@ -8,6 +8,7 @@ var ctrlArticle = require('../MVC/controllers/articles.js')
 var ctrlNewsFeed = require('../MVC/controllers/news.js')
 var ctrlHomepage = require('../MVC/controllers/homepage.js');
 var ctrltwitchUsers = require('../MVC/controllers/twitchusers.js')
+var ctrlTwitchpage = require('../MVC/controllers/twitch.js')
 
 //ReCaptcha MiddleWare
 recaptcha.init('6LdQHTEUAAAAAEck5dN_0xuNI97DTZw9YKhPYrx2', '6LdQHTEUAAAAAJBSZRxCsHavkmIcFkn8PuXadE0c');
@@ -29,7 +30,7 @@ router.get('/items', ctrlDiabloPages.items);
 router.get('/leaderboards', ctrlDiabloPages.leaderboards);
 router.get('/news', ctrlNewsFeed.news);
 router.get('/messages', ctrlMessage.messages);
-router.get('/twitch', ctrlDiabloPages.twitch);
+router.get('/twitch', ctrlTwitchpage.twitch);
 router.post('/submit', ctrlSubscribe.subscribeSubmitted);
 router.post('/messages', ctrlMessage.messageSubmitted);
 router.post('/articleInjection', ctrlArticle.articleSubmitted);
