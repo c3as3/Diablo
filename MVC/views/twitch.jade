@@ -46,12 +46,12 @@ block content
 
     
     .streamContainer
-      .streamerContainer        
-          each twitchuser in twitchusers
-              p #{twitchuser.username}
-              p #{twitchuser.discord}
-              p #{twitchuser.twitter}
-              p #{twitchuser.description}
+      each twitchuser in twitchusers
+        .streamerContainer        
+              p.streamDescription Twitch Username #{twitchuser.username}
+              p.streamDescription Discord Handle #{twitchuser.discord}
+              p.streamDescription Twitter @#{twitchuser.twitter}
+              p.streamDescription Description !{(twitchuser.description).replace(/\n/g, '<br/>')}
               
       //- .streamerContainer
       //-   .streamLogo.streamer
