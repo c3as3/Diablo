@@ -18,7 +18,7 @@ block content
     //- .streamer
     //- .streamer
     //- .streamer
-    //- 
+
     //- h2 Testing
     //- 
     //- .cardContainer
@@ -40,45 +40,47 @@ block content
     //-     figure.streamer
     //-     figure.info Testing the Flip
     //- 
-    
-    h2 Twitch Streamers
-    
-    .streamContainer
-      .streamerContainer
-        .streamLogo.streamer
-        p.streamDescription.
-          Do nulla voluptatibus de do dolore quamquam non probant non arbitror, deserunt 
-          enim quamquam ullamco iis iis an philosophari, te multos vidisse ab commodo 
-          exercitation non quamquam quo sed quorum amet est eiusmod. Nam culpa sunt dolor 
-          occaecat et si sed quae veniam anim in de irure philosophari quo incurreret quid 
-      .streamerContainer
-        .streamLogo.streamer
-        p.streamDescription.
-          Do nulla voluptatibus de do dolore quamquam non probant non arbitror, deserunt 
-          enim quamquam ullamco iis iis an philosophari, te multos vidisse ab commodo 
-          exercitation non quamquam quo sed quorum amet est eiusmod. Nam culpa sunt dolor 
-          occaecat et si sed quae veniam anim in de irure philosophari quo incurreret quid 
-      .streamerContainer
-        .streamLogo.streamer
-        p.streamDescription.
-          Do nulla voluptatibus de do dolore quamquam non probant non arbitror, deserunt 
-          enim quamquam ullamco iis iis an philosophari, te multos vidisse ab commodo 
-          exercitation non quamquam quo sed quorum amet est eiusmod. Nam culpa sunt dolor 
-          occaecat et si sed quae veniam anim in de irure philosophari quo incurreret quid 
-      .streamerContainer
-        .streamLogo.streamer
-        p.streamDescription.
-          Do nulla voluptatibus de do dolore quamquam non probant non arbitror, deserunt 
-          enim quamquam ullamco iis iis an philosophari, te multos vidisse ab commodo 
-          exercitation non quamquam quo sed quorum amet est eiusmod. Nam culpa sunt dolor 
-          occaecat et si sed quae veniam anim in de irure philosophari quo incurreret quid 
-      .streamerContainer
-        .streamLogo.streamer
-        p.streamDescription.
-          Do nulla voluptatibus de do dolore quamquam non probant non arbitror, deserunt 
-          enim quamquam ullamco iis iis an philosophari, te multos vidisse ab commodo 
-          exercitation non quamquam quo sed quorum amet est eiusmod. Nam culpa sunt dolor 
-          occaecat et si sed quae veniam anim in de irure philosophari quo incurreret quid 
+
+    //- 
+    //h2 More Testing
 
     
-        
+    .streamContainer
+      .streamerContainer        
+          each twitchuser in twitchusers
+              p #{twitchuser.username}
+              p #{twitchuser.discord}
+              p #{twitchuser.twitter}
+              p #{twitchuser.description}
+              
+      //- .streamerContainer
+      //-   .streamLogo.streamer
+      //-   p.streamDescription.
+      //-     Do nulla voluptatibus de do dolore quamquam non probant non arbitror, deserunt 
+      //-     enim quamquam ullamco iis iis an philosophari, te multos vidisse ab commodo 
+      //-     exercitation non quamquam quo sed quorum amet est eiusmod. Nam culpa sunt dolor 
+      //-     occaecat et si sed quae veniam anim in de irure philosophari quo incurreret quid 
+      //- .streamerContainer
+      //-   .streamLogo.streamer
+      //-   p.streamDescription.
+      //-     Do nulla voluptatibus de do dolore quamquam non probant non arbitror, deserunt 
+      //-     enim quamquam ullamco iis iis an philosophari, te multos vidisse ab commodo 
+      //-     exercitation non quamquam quo sed quorum amet est eiusmod. Nam culpa sunt dolor 
+      //-     occaecat et si sed quae veniam anim in de irure philosophari quo incurreret quid 
+      //- .streamerContainer
+      //-   .streamLogo.streamer
+      //-   p.streamDescription.
+      //-     Do nulla voluptatibus de do dolore quamquam non probant non arbitror, deserunt 
+      //-     enim quamquam ullamco iis iis an philosophari, te multos vidisse ab commodo 
+      //-     exercitation non quamquam quo sed quorum amet est eiusmod. Nam culpa sunt dolor 
+      //-     occaecat et si sed quae veniam anim in de irure philosophari quo incurreret quid 
+      //- .streamerContainer
+      //-   .streamLogo.streamer
+      //-   p.streamDescription.
+      //-     Do nulla voluptatibus de do dolore quamquam non probant non arbitror, deserunt 
+      //-     enim quamquam ullamco iis iis an philosophari, te multos vidisse ab commodo 
+      //-     exercitation non quamquam quo sed quorum amet est eiusmod. Nam culpa sunt dolor 
+      //-     occaecat et si sed quae veniam anim in de irure philosophari quo incurreret quid 
+      //- 
+      //- 
+      //- 
