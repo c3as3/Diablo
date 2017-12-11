@@ -23,6 +23,18 @@ module.exports.leaderboards = function(req, res, next){
   res.render('leaderboards');
   console.log('Leaderboards Page Loaded')
 };
+module.exports.twitch = function(req, res, next){
+  res.render('twitch',{
+    twitchName: null,
+    twitchIcon: null,
+    description: null,
+    facebook: null,
+    twitter: null,
+    discord: null,
+    twitch: null
+  });
+  console.log('Twitch Page Loaded')
+};
 module.exports.splash = function(req, res, next){
   res.render('splash', {title: 'Subscribe Now',success: req.session.success, errors: req.session.errors});
   req.session.errors = null;
