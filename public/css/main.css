@@ -688,6 +688,25 @@ section.guides {
   text-align: center; }
   section.guides h2, section.guides p {
     margin: 20px 0; }
+  section.guides .fhr {
+    border-top: 2px solid #FF0000; }
+  section.guides .reference {
+    font-style: italic;
+    font-size: 14px;
+    color: orange; }
+  section.guides table {
+    width: 100%;
+    background-color: #1E1D1C; }
+    section.guides table tbody tr th {
+      padding: 8px;
+      font-weight: bold;
+      border: 1px solid #95989A;
+      color: #FF0000; }
+    section.guides table tbody tr td {
+      padding: 8px;
+      border: 1px solid #95989A; }
+    section.guides table tbody tr td:first-child {
+      color: #FF0000; }
 
 section.items {
   grid-column: 2 / 12;
