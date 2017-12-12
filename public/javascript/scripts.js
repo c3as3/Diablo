@@ -1,5 +1,10 @@
 $(document).ready(function(){
 
+  //Takes user back to homepage when clicking logo
+  $('.logo').click(function(){
+    window.location.href = ('/');
+  });
+
   //Mobile Hamburger Menu Toggle
   $('.hamburger').click(function(){
     $(this).toggleClass('open');
@@ -26,13 +31,6 @@ $(document).ready(function(){
       scrollTop: $anchor.top
     }, 2500);
   });
-  //
-  // $('form button').click(function(){
-  //   $('form input').remove();
-  //   $('.g-recaptcha').remove();
-  //   $(this).remove();
-  //   $('.footer').css('grid-row', '8');
-  //   $('.classContainer').css('grid-row', '7');
-  // });
 
+//Check if Twitch Stream is Live or Not
 });
