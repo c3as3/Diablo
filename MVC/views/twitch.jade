@@ -2,83 +2,134 @@ extends layout
 
 block content 
   section.twitch
-    
-    //- h2 Online
-    //- 
-    //- .streamer.lumen
-    //- .streamer.diglio
-    //- .streamer.btneander
-    //- 
-    //- h2 Offline
-    //- 
-    //- .streamer
-    //- .streamer
-    //- .streamer
-    //- .streamer
-    //- .streamer
-    //- .streamer
-    //- .streamer
-    //- 
-    //- h2 Testing
-    //- 
-    //- .cardContainer
-    //-   .streamerCard
-    //-     figure.streamer.lumen
-    //-     figure.info Lumen_BR
-    //-       h3 Schedule:
-    //-       p 11am - 10pm 7x/week
-    //- .cardContainer
-    //-   .streamerCard
-    //-     figure.streamer.diglio
-    //-     figure.info Testing the Flip
-    //- .cardContainer
-    //-   .streamerCard
-    //-     figure.streamer.btneander
-    //-     figure.info Testing the Flip
-    //- .cardContainer
-    //-   .streamerCard
-    //-     figure.streamer
-    //-     figure.info Testing the Flip
-    //- 
-    
+
     h2 Twitch Streamers
     
-    .streamContainer
-      .streamerContainer
-        .streamLogo.streamer
-        p.streamDescription.
-          Do nulla voluptatibus de do dolore quamquam non probant non arbitror, deserunt 
-          enim quamquam ullamco iis iis an philosophari, te multos vidisse ab commodo 
-          exercitation non quamquam quo sed quorum amet est eiusmod. Nam culpa sunt dolor 
-          occaecat et si sed quae veniam anim in de irure philosophari quo incurreret quid 
-      .streamerContainer
-        .streamLogo.streamer
-        p.streamDescription.
-          Do nulla voluptatibus de do dolore quamquam non probant non arbitror, deserunt 
-          enim quamquam ullamco iis iis an philosophari, te multos vidisse ab commodo 
-          exercitation non quamquam quo sed quorum amet est eiusmod. Nam culpa sunt dolor 
-          occaecat et si sed quae veniam anim in de irure philosophari quo incurreret quid 
-      .streamerContainer
-        .streamLogo.streamer
-        p.streamDescription.
-          Do nulla voluptatibus de do dolore quamquam non probant non arbitror, deserunt 
-          enim quamquam ullamco iis iis an philosophari, te multos vidisse ab commodo 
-          exercitation non quamquam quo sed quorum amet est eiusmod. Nam culpa sunt dolor 
-          occaecat et si sed quae veniam anim in de irure philosophari quo incurreret quid 
-      .streamerContainer
-        .streamLogo.streamer
-        p.streamDescription.
-          Do nulla voluptatibus de do dolore quamquam non probant non arbitror, deserunt 
-          enim quamquam ullamco iis iis an philosophari, te multos vidisse ab commodo 
-          exercitation non quamquam quo sed quorum amet est eiusmod. Nam culpa sunt dolor 
-          occaecat et si sed quae veniam anim in de irure philosophari quo incurreret quid 
-      .streamerContainer
-        .streamLogo.streamer
-        p.streamDescription.
-          Do nulla voluptatibus de do dolore quamquam non probant non arbitror, deserunt 
-          enim quamquam ullamco iis iis an philosophari, te multos vidisse ab commodo 
-          exercitation non quamquam quo sed quorum amet est eiusmod. Nam culpa sunt dolor 
-          occaecat et si sed quae veniam anim in de irure philosophari quo incurreret quid 
+    .streamSectionContainer
+      
+      .streamerCard
+        .profilePic.lumenbr
+        p.streamerName #[a(href="https://twitch.tv/lumen_br" target="_blank") Lumen_Br]
+        p.streamerDescription.
+          Hi there! My name is Samuel, also known as Lumen! I'm 24 years old from Canada. #[br]
+          My passion for video games started with Mario 64, Zelda Ocarina of Time, GoldenEye 007 and Conker's Bad Fur Day. I've had a N64, NES, Playstation 1 / 2, Xbox 360 and got a Xbox One recently! I was also hooked up on World of Warcraft for a long time. #[br]
+          After watching Twitch for about two years, I've decided to make a channel and share my passion for video games with you guys!
+        ul.streamerMediaLinks
+          li.twitch
+            a(href="https://twitch.tv/Lumen_Br" target="_blank")
+          li.twitter
+            a(href="https://twitter.com/Lumen_Br" target="_blank")
+          li.discord
+            a(href="https://discord.gg/ZTTwGYs" target="_blank")
+            
+      .streamerCard
+        .profilePic.btneandertha1
+        p.streamerName #[a(href="https://twitch.tv/btneandertha1" target="_blank") BTNeandertha1]
+        p.streamerDescription.
+          High School Graduate, Ex Machinist, and now a Full-Time Streamer striving for the dream! #[br]
+          I try to be the best I can be so we can have fun, show people what we've learned, and entertain those who want to be entertained.
+        ul.streamerMediaLinks
+          li.twitch
+            a(href="https://twitch.tv/btneandertha1" target="_blank")
+          li.twitter
+            a(href="https://twitter.com/btneandertha1" target="_blank")
+          li.discord
+            a(href="https://discord.gg/DqEEjWQ" target="_blank")
+          li.youtube
+            a(href="https://www.youtube.com/channel/UCCYXSft2NbtqcxJTDskcQcg" target="_blank")
+      
+      .streamerCard
+        .profilePic.diglio
+        p.streamerName #[a(href="https://twitch.tv/diglio" target="_blank") Diglio]
+        p.streamerDescription.
+          My name is Mike, aka Digs, A 26 year old Computer Engineer who has been an avid gamer his entire life. Gaming has always been a way for me to release and get away from the stress of everyday life. #[br] However, being a very competitive gamer, 
+          I'm not sure how much of a "release" it really is then.
+        ul.streamerMediaLinks
+          li.twitch
+            a(href="https://twitch.tv/diglio" target="_blank")
+          li.twitter
+            a(href="https://twitter.com/mdiggss" target="_blank")
+          li.discord
+            a(href="https://discord.gg/eRU5cBZ" target="_blank")
+          li.youtube
+            a(href="https://youtube.com/mdiggss" target="_blank")
 
-    
+          
+      .streamerCard
+        .profilePic.alarashade
+        p.streamerName #[a(href="https://twitch.tv/alarashade" target="_blank") AlaraShade]
+        p.streamerDescription.
+          Herro, I am Alara Shade and I am 29yrs old and live in New Jersey. I started streaming in February 2014. Partnered October 11th 2017. I am stuck in the 90s.
+          ¯\(ツ)/¯ I'm also eccentric and have an outrageous accent. #[br]
+          I stream because, I unfortunately also suffer from Lyme, Chronic Rocky Mountain Spotted Fever, Brucellosis and many other health problems, streaming is a way where I can take my mind off edge, make other people happy, and be able to be close to my animals.
+        ul.streamerMediaLinks
+          li.twitch
+            a(href="https://twitch.tv/alarashade" target="_blank")
+          li.twitter
+            a(href="https://twitter.com/alarashade" target="_blank")
+          li.discord
+            a(href="https://discord.gg/shaderaiders" target="_blank")
+          li.youtube
+            a(href="https://www.youtube.com/channel/UCPAwxJC_RShrNmoAp7wumJQ" target="_blank")
         
+      .streamerCard
+        .profilePic.mrllama
+        p.streamerName #[a(href="https://twitch.tv/mrllamasc" target="_blank") MrLlamaSC]
+        p.streamerDescription.
+          My name is Alex Sementelli and I have been a professional Twitch broadcaster since January 21, 2015. I am 26 years old and ever since I was a child I have had an interest in finding a way to incorporate video games into my life. I used to dream about becoming a professional Starcraft player but as I got more serious about it I found there wasn't enough interaction with people for me and decided to continue searching. Eventually I stumbled into Diablo 2 speedrunning on Twitch and it gave me so much joy, challenge, and interaction that I knew this was exactly what I wanted to be doing. So I have just been working hard at that trying to improve my skills and streams to create and entertain an awesome community.
+        ul.streamerMediaLinks
+          li.twitch
+            a(href="https://twitch.tv/mrllamasc" target="_blank")
+          li.twitter
+            a(href="https://twitter.com/mrllamasc" target="_blank")
+          li.discord
+            a(href="https://discord.gg/0cdE0TjHEACCSO2L" target="_blank")
+          li.youtube
+            a(href="https://youtube.com/mrllamasc" target="_blank")
+
+        
+      .streamerCard
+        .profilePic.flufflo
+        p.streamerName #[a(href="https://twitch.tv/flufflo" target="_blank") Flufflo]
+        p.streamerDescription.
+          Hi there! I am a cook from southern Alberta, Canada. It has always been a dream of mine to live stream, and I have decided to "just do it". I have been playing Diablo 2 since it came out, and done many self found playthroughs. Speed-runs have caught my attention and sparked a new love for the game. Occasionally I play other stuff to prevent burning out on D2, I hope you'll check it out!
+        ul.streamerMediaLinks
+          li.twitch
+            a(href="https://twitch.tv/flufflo" target="_blank")
+          li.twitter
+            a(href="https://twitter.com/flufflo_" target="_blank")
+          li.youtube
+            a(href="https://youtube.com/flufflo" target="_blank")
+        
+      .streamerCard
+        .profilePic.djwaters
+        p.streamerName #[a(href="https://twitch.tv/djwaters22" target="_blank") djwaters22]
+        p.streamerDescription.
+          Hey everyone! My name is DJ and I love to game #[br]
+          #I am a comedian! dont take anything I say seriously! #[br]
+          I RAP for Donations! You pick the instrumental and ILL DROP BARS #[br]
+          Please DO NOT give me suggestions on how to play, it's very annoying #[br]
+          *Starcraft 2 #[br]
+          *Diablo 2 #[br]
+          *Blizzard games #[br]
+        ul.streamerMediaLinks
+          li.twitch
+            a(href="https://twitch.tv/djwaters22" target="_blank")
+          li.twitter
+            a(href="https://twitter.com/djwaters" target="_blank")
+          li.youtube
+            a(href="https://youtube.com/djwaters22" target="_blank")
+
+
+      .streamerCard
+        .profilePic.mrbubbles
+        p.streamerName #[a(href="https://twitch.tv/mrbubbles17" target="_blank") djwaters22]
+        p.streamerDescription.
+          Welcome to the domain of MrBubbles17! My name is Frankie,a gamer from Miami, FL who has a passion for competitive games. My first console was the NES and mylove for Zelda forever fueled my passion for the gaming industry. Lately I've been playing Overwatch and Hearthstone. Whenever I'm streaming ask me for an invite, and let's kick some ass!
+        ul.streamerMediaLinks
+          li.twitch
+            a(href="https://twitch.tv/mrbubbles17" target="_blank")
+          li.twitter
+            a(href="https://twitter.com/mrbubbles17tv" target="_blank")
+          li.instagram
+            a(href="https://instagram.com/frankiepdl" target="_blank")
