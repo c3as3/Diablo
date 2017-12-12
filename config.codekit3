@@ -327,6 +327,13 @@
 		"oAP": "\/public\/html\/classes.html",
 		"oF": 0
 		},
+	"\/public\/html\/guides.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/html\/guides.html",
+		"oF": 0
+		},
 	"\/public\/html\/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -382,6 +389,16 @@
 		"oA": 2,
 		"oAP": "\/public\/html\/twitch.html",
 		"oF": 0
+		},
+	"\/public\/img\/alarashade_profile.jpeg": {
+		"ft": 16384,
+		"iS": 32969,
+		"oA": 0,
+		"oAP": "\/public\/img\/alarashade_profile.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/public\/img\/Amazon-Skills.jpg": {
 		"ft": 16384,
@@ -455,6 +472,28 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/public\/img\/discord.png": {
+		"ft": 32768,
+		"iS": 8024,
+		"oA": 0,
+		"oAP": "\/public\/img\/discord.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/public\/img\/djwaters_profile.png": {
+		"ft": 32768,
+		"iS": 80467,
+		"oA": 0,
+		"oAP": "\/public\/img\/djwaters_profile.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/public\/img\/Druid.gif": {
 		"ft": 4194304,
 		"iS": 213154,
@@ -462,6 +501,28 @@
 		"oAP": "\/public\/img\/Druid.gif",
 		"oF": 0,
 		"opt": 0
+		},
+	"\/public\/img\/flufflo_profile.png": {
+		"ft": 32768,
+		"iS": 94012,
+		"oA": 0,
+		"oAP": "\/public\/img\/flufflo_profile.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/public\/img\/instagram.png": {
+		"ft": 32768,
+		"iS": 1518052,
+		"oA": 0,
+		"oAP": "\/public\/img\/instagram.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/public\/img\/ladder.jpg": {
 		"ft": 16384,
@@ -486,9 +547,20 @@
 		},
 	"\/public\/img\/lumen_profile.png": {
 		"ft": 32768,
-		"iS": 38852,
+		"iS": 57975,
 		"oA": 0,
 		"oAP": "\/public\/img\/lumen_profile.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/public\/img\/mrbubbles_profile.png": {
+		"ft": 32768,
+		"iS": 150689,
+		"oA": 0,
+		"oAP": "\/public\/img\/mrbubbles_profile.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -501,8 +573,8 @@
 		"oA": 0,
 		"oAP": "\/public\/img\/mrllama_profile.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -556,6 +628,39 @@
 		"iS": 688842,
 		"oA": 0,
 		"oAP": "\/public\/img\/splash-bg.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/public\/img\/twitch.png": {
+		"ft": 32768,
+		"iS": 6168,
+		"oA": 0,
+		"oAP": "\/public\/img\/twitch.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/public\/img\/twitter.png": {
+		"ft": 32768,
+		"iS": 11381,
+		"oA": 0,
+		"oAP": "\/public\/img\/twitter.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/public\/img\/youtube.png": {
+		"ft": 32768,
+		"iS": 5437,
+		"oA": 0,
+		"oAP": "\/public\/img\/youtube.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
