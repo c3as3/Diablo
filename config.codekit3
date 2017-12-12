@@ -418,6 +418,36 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/public\/img\/amazonSkills1.jpg": {
+		"ft": 16384,
+		"iS": 35748,
+		"oA": 0,
+		"oAP": "\/public\/img\/amazonSkills1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/img\/amazonSkills2.jpg": {
+		"ft": 16384,
+		"iS": 36120,
+		"oA": 0,
+		"oAP": "\/public\/img\/amazonSkills2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/img\/amazonSkills3.jpg": {
+		"ft": 16384,
+		"iS": 35842,
+		"oA": 0,
+		"oAP": "\/public\/img\/amazonSkills3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/public\/img\/Assassin.gif": {
 		"ft": 4194304,
 		"iS": 174693,
@@ -425,6 +455,36 @@
 		"oAP": "\/public\/img\/Assassin.gif",
 		"oF": 0,
 		"opt": 0
+		},
+	"\/public\/img\/assassinSkills1.jpg": {
+		"ft": 16384,
+		"iS": 32206,
+		"oA": 0,
+		"oAP": "\/public\/img\/assassinSkills1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/public\/img\/assassinSkills2.jpg": {
+		"ft": 16384,
+		"iS": 32338,
+		"oA": 0,
+		"oAP": "\/public\/img\/assassinSkills2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/img\/assassinSkills3.jpg": {
+		"ft": 16384,
+		"iS": 32303,
+		"oA": 0,
+		"oAP": "\/public\/img\/assassinSkills3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/public\/img\/baal.gif": {
 		"ft": 4194304,
@@ -442,6 +502,36 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/public\/img\/barbarianSkills1.jpg": {
+		"ft": 16384,
+		"iS": 31982,
+		"oA": 0,
+		"oAP": "\/public\/img\/barbarianSkills1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/img\/barbarianSkills2.jpg": {
+		"ft": 16384,
+		"iS": 31701,
+		"oA": 0,
+		"oAP": "\/public\/img\/barbarianSkills2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/img\/barbarianSkills3.jpg": {
+		"ft": 16384,
+		"iS": 32179,
+		"oA": 0,
+		"oAP": "\/public\/img\/barbarianSkills3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/public\/img\/btneander_profile.png": {
 		"ft": 32768,
 		"iS": 11145,
@@ -452,6 +542,26 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+		},
+	"\/public\/img\/cesar.jpeg": {
+		"ft": 16384,
+		"iS": 231427,
+		"oA": 0,
+		"oAP": "\/public\/img\/cesar.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/img\/cesar.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/public\/img\/cesar.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/public\/img\/Diablo.gif": {
 		"ft": 4194304,
@@ -501,6 +611,36 @@
 		"oAP": "\/public\/img\/Druid.gif",
 		"oF": 0,
 		"opt": 0
+		},
+	"\/public\/img\/druidSkills1.jpg": {
+		"ft": 16384,
+		"iS": 77234,
+		"oA": 0,
+		"oAP": "\/public\/img\/druidSkills1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/img\/druidSkills2.jpg": {
+		"ft": 16384,
+		"iS": 80276,
+		"oA": 0,
+		"oAP": "\/public\/img\/druidSkills2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/img\/druidSkills3.jpg": {
+		"ft": 16384,
+		"iS": 32669,
+		"oA": 0,
+		"oAP": "\/public\/img\/druidSkills3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/public\/img\/flufflo_profile.png": {
 		"ft": 32768,
@@ -556,6 +696,16 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/public\/img\/mike.jpeg": {
+		"ft": 16384,
+		"iS": 268755,
+		"oA": 0,
+		"oAP": "\/public\/img\/mike.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/public\/img\/mrbubbles_profile.png": {
 		"ft": 32768,
 		"iS": 150689,
@@ -586,6 +736,36 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/public\/img\/necromancerSkills1.jpg": {
+		"ft": 16384,
+		"iS": 187659,
+		"oA": 0,
+		"oAP": "\/public\/img\/necromancerSkills1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/img\/necromancerSkills2.jpg": {
+		"ft": 16384,
+		"iS": 187927,
+		"oA": 0,
+		"oAP": "\/public\/img\/necromancerSkills2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/img\/necromancerSkills3.jpg": {
+		"ft": 16384,
+		"iS": 181952,
+		"oA": 0,
+		"oAP": "\/public\/img\/necromancerSkills3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/public\/img\/Paladin.gif": {
 		"ft": 4194304,
 		"iS": 78168,
@@ -593,6 +773,36 @@
 		"oAP": "\/public\/img\/Paladin.gif",
 		"oF": 0,
 		"opt": 0
+		},
+	"\/public\/img\/paladinSkills1.jpg": {
+		"ft": 16384,
+		"iS": 32418,
+		"oA": 0,
+		"oAP": "\/public\/img\/paladinSkills1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/img\/paladinSkills2.jpg": {
+		"ft": 16384,
+		"iS": 32619,
+		"oA": 0,
+		"oAP": "\/public\/img\/paladinSkills2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/img\/paladinSkills3.jpg": {
+		"ft": 16384,
+		"iS": 32317,
+		"oA": 0,
+		"oAP": "\/public\/img\/paladinSkills3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/public\/img\/ryu_profile.png": {
 		"ft": 32768,
@@ -612,6 +822,36 @@
 		"oAP": "\/public\/img\/Sorceress.gif",
 		"oF": 0,
 		"opt": 0
+		},
+	"\/public\/img\/sorceressSkills1.jpg": {
+		"ft": 16384,
+		"iS": 75366,
+		"oA": 0,
+		"oAP": "\/public\/img\/sorceressSkills1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/img\/sorceressSkills2.jpg": {
+		"ft": 16384,
+		"iS": 74798,
+		"oA": 0,
+		"oAP": "\/public\/img\/sorceressSkills2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/img\/sorceressSkills3.jpg": {
+		"ft": 16384,
+		"iS": 75210,
+		"oA": 0,
+		"oAP": "\/public\/img\/sorceressSkills3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/public\/img\/splash-bg.jpg": {
 		"ft": 16384,

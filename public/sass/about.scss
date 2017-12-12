@@ -13,14 +13,14 @@ section.about{
 
   h2{
     text-decoration: underline;
+    color: orange;
   }
 
   .pic{
     grid-column: 2 / 3;
     height: 300px;
-    width: 150px;
+    width: 200px;
     margin: 20px;
-    background-image: url('https://www.fillmurray.com/150/300');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -30,16 +30,31 @@ section.about{
     }
   }
 
+  .cesar{
+    background-image: url('../img/cesar.jpeg');
+  }
+
+  .mike{
+    background-image: url('../img/mike.jpeg');
+  }
+
   .bio{
-    grid-column: 3 / 6;
+    grid-column: 3 / 7;
     margin: 20px;
 
     @media screen and (max-width: 620px){
       grid-column: 1;
     }
   }
+
   @media screen and (max-width: 620px){
     grid-template-columns: 1fr;
 
+  }
+
+  hr{
+    grid-column: 1 / 7;
+    border-bottom: 2px solid $diabloRed;
+    width: 100%;
   }
 }

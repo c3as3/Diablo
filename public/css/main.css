@@ -475,21 +475,25 @@ section.about {
     grid-column: 1 / 7;
     margin: 20px 0; }
   section.about h2 {
-    text-decoration: underline; }
+    text-decoration: underline;
+    color: orange; }
   section.about .pic {
     grid-column: 2 / 3;
     height: 300px;
-    width: 150px;
+    width: 200px;
     margin: 20px;
-    background-image: url("https://www.fillmurray.com/150/300");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat; }
     @media screen and (max-width: 620px) {
       section.about .pic {
         grid-column: 1; } }
+  section.about .cesar {
+    background-image: url("../img/cesar.jpeg"); }
+  section.about .mike {
+    background-image: url("../img/mike.jpeg"); }
   section.about .bio {
-    grid-column: 3 / 6;
+    grid-column: 3 / 7;
     margin: 20px; }
     @media screen and (max-width: 620px) {
       section.about .bio {
@@ -497,6 +501,10 @@ section.about {
   @media screen and (max-width: 620px) {
     section.about {
       grid-template-columns: 1fr; } }
+  section.about hr {
+    grid-column: 1 / 7;
+    border-bottom: 2px solid #FF0000;
+    width: 100%; }
 
 section.twitch {
   grid-column: 2 / 12;
@@ -522,6 +530,9 @@ section.twitch {
     justify-items: center;
     grid-row-gap: 5px;
     grid-column-gap: 25px; }
+    @media screen and (max-width: 1230px) {
+      section.twitch .streamSectionContainer {
+        grid-template-columns: 1fr; } }
     section.twitch .streamSectionContainer .streamerCard {
       width: 600px;
       height: auto;
@@ -553,7 +564,7 @@ section.twitch {
         grid-column: 2;
         grid-row: 2;
         font-size: 14px;
-        color: #FF0000; }
+        color: silver; }
       section.twitch .streamSectionContainer .streamerCard .streamerMediaLinks {
         grid-column: 2;
         grid-row: 1;
@@ -675,7 +686,9 @@ section.classes {
     section.classes .classGroup .classSkill {
       height: 200px;
       width: 200px;
-      background-color: #FF0000; }
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat; }
     section.classes .classGroup .classSkill.clicked {
       height: 500px;
       width: 25vw; }
@@ -699,6 +712,48 @@ section.classes {
       @media screen and (max-width: 620px) {
         section.classes .classGroup .tree3 {
           grid-column: 1; } }
+    section.classes .classGroup .amazonSkills1 {
+      background-image: url("../img/amazonSkills1.jpg"); }
+    section.classes .classGroup .amazonSkills2 {
+      background-image: url("../img/amazonSkills2.jpg"); }
+    section.classes .classGroup .amazonSkills3 {
+      background-image: url("../img/amazonSkills3.jpg"); }
+    section.classes .classGroup .assassinSkills1 {
+      background-image: url("../img/assassinSkills1.jpg"); }
+    section.classes .classGroup .assassinSkills2 {
+      background-image: url("../img/assassinSkills2.jpg"); }
+    section.classes .classGroup .assassinSkills3 {
+      background-image: url("../img/assassinSkills3.jpg"); }
+    section.classes .classGroup .barbarianSkills1 {
+      background-image: url("../img/barbarianSkills1.jpg"); }
+    section.classes .classGroup .barbarianSkills2 {
+      background-image: url("../img/barbarianSkills2.jpg"); }
+    section.classes .classGroup .barbarianSkills3 {
+      background-image: url("../img/barbarianSkills3.jpg"); }
+    section.classes .classGroup .druidSkills1 {
+      background-image: url("../img/druidSkills1.jpg"); }
+    section.classes .classGroup .druidSkills2 {
+      background-image: url("../img/druidSkills2.jpg"); }
+    section.classes .classGroup .druidSkills3 {
+      background-image: url("../img/druidSkills3.jpg"); }
+    section.classes .classGroup .necromancerSkills1 {
+      background-image: url("../img/necromancerSkills1.jpg"); }
+    section.classes .classGroup .necromancerSkills2 {
+      background-image: url("../img/necromancerSkills2.jpg"); }
+    section.classes .classGroup .necromancerSkills3 {
+      background-image: url("../img/necromancerSkills3.jpg"); }
+    section.classes .classGroup .paladinSkills1 {
+      background-image: url("../img/paladinSkills1.jpg"); }
+    section.classes .classGroup .paladinSkills2 {
+      background-image: url("../img/paladinSkills2.jpg"); }
+    section.classes .classGroup .paladinSkills3 {
+      background-image: url("../img/paladinSkills3.jpg"); }
+    section.classes .classGroup .sorceressSkills1 {
+      background-image: url("../img/sorceressSkills1.jpg"); }
+    section.classes .classGroup .sorceressSkills2 {
+      background-image: url("../img/sorceressSkills2.jpg"); }
+    section.classes .classGroup .sorceressSkills3 {
+      background-image: url("../img/sorceressSkills3.jpg"); }
 
 section.leaderboards {
   grid-column: 2 / 12;

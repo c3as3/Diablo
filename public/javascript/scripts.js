@@ -1,5 +1,10 @@
 $(document).ready(function(){
 
+  //Takes user back to homepage when clicking logo
+  $('.logo').click(function(){
+    window.location.href = ('/');
+  });
+
   //Mobile Hamburger Menu Toggle
   $('.hamburger').click(function(){
     $(this).toggleClass('open');

@@ -27,6 +27,10 @@ section.twitch{
     grid-row-gap: 5px;
     grid-column-gap: 25px;
 
+    @media screen and (max-width: 1230px){
+      grid-template-columns: 1fr;
+    }
+
     .streamerCard{
       width: 600px;
       height: auto;
@@ -64,7 +68,7 @@ section.twitch{
         grid-column: 2;
         grid-row: 2;
         font-size: 14px;
-        color: $diabloRed;
+        color: silver;
       }
 
       .streamerMediaLinks{
