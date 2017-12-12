@@ -93,9 +93,7 @@ section.classes{
     .classSkill{
       height: 200px;
       width: 200px;
-      background-position: center;
-      background-size: contain;
-      background-repeat: no-repeat;
+      background-color: $diabloRed;
     }
     .classSkill.clicked{
       height: 500px;
@@ -124,69 +122,6 @@ section.classes{
       @media screen and (max-width: 620px){
         grid-column: 1;
       }
-    }
-    .amazonSkills1{
-      background-image: url('../img/amazonSkills1.jpg');
-    }
-    .amazonSkills2{
-      background-image: url('../img/amazonSkills2.jpg');
-    }
-    .amazonSkills3{
-      background-image: url('../img/amazonSkills3.jpg');
-    }
-    .assassinSkills1{
-      background-image: url('../img/assassinSkills1.jpg');
-    }
-    .assassinSkills2{
-      background-image: url('../img/assassinSkills2.jpg');
-    }
-    .assassinSkills3{
-      background-image: url('../img/assassinSkills3.jpg');
-    }
-    .barbarianSkills1{
-      background-image: url('../img/barbarianSkills1.jpg');
-    }
-    .barbarianSkills2{
-      background-image: url('../img/barbarianSkills2.jpg');
-    }
-    .barbarianSkills3{
-      background-image: url('../img/barbarianSkills3.jpg');
-    }
-    .druidSkills1{
-      background-image: url('../img/druidSkills1.jpg');
-    }
-    .druidSkills2{
-      background-image: url('../img/druidSkills2.jpg');
-    }
-    .druidSkills3{
-      background-image: url('../img/druidSkills3.jpg');
-    }
-    .necromancerSkills1{
-      background-image: url('../img/necromancerSkills1.jpg');
-    }
-    .necromancerSkills2{
-      background-image: url('../img/necromancerSkills2.jpg');
-    }
-    .necromancerSkills3{
-      background-image: url('../img/necromancerSkills3.jpg');
-    }
-    .paladinSkills1{
-      background-image: url('../img/paladinSkills1.jpg');
-    }
-    .paladinSkills2{
-      background-image: url('../img/paladinSkills2.jpg');
-    }
-    .paladinSkills3{
-      background-image: url('../img/paladinSkills3.jpg');
-    }
-    .sorceressSkills1{
-      background-image: url('../img/sorceressSkills1.jpg');
-    }
-    .sorceressSkills2{
-      background-image: url('../img/sorceressSkills2.jpg');
-    }
-    .sorceressSkills3{
-      background-image: url('../img/sorceressSkills3.jpg');
     }
   }
 }
