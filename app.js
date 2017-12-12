@@ -118,25 +118,6 @@ else var port = 3000;
   console.log('This server started on port '+ port);
 }})
 module.exports = app;
-
-
-
-
-//REAL SERVER CONFIGURATION, SWAP OUT WHEN GOING LIVE!
-// app.listen(function(port, err){
-//   var port = 8080;
-//   if (err){
-//     console.log('Whoops, there seems to be a problem with the connection');
-//   }else{
-//     (8080, 'localhost');
-//     console.log('Server running at http://TristramReborn:8080/');
-//   console.log('This server started on port '+ port);
-// }})
-// module.exports = app;
-
-
-
-
 /*
 /////////////////////////////////////////////
 /////////////////////////////////////////////

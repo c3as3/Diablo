@@ -4,7 +4,6 @@ require('../models/db');
 
 
 
-
 var twitchUserSchema = mongoose.Schema({
     username: String,
     twitter: String,
@@ -26,7 +25,6 @@ module.exports.twitchUsersSubmitted = function(req,res)   {
       var errors = req.validationErrors();
 
       if (errors) {
-
 
 
       console.log('errors on form ')
