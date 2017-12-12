@@ -4,6 +4,7 @@ require('../models/db');
 
 
 
+
 var twitchUserSchema = mongoose.Schema({
     username: String,
     twitter: String,
@@ -20,12 +21,12 @@ module.exports.twitchUsersSubmitted = function(req,res)   {
       req.checkBody('username', 'Please enter a Twitch username.').notEmpty();
       req.checkBody('twitter', 'Please enter a twitter username.').notEmpty();
       req.checkBody('discord', 'Please type a Discord username.').notEmpty();
-      req.checkBody('icon', 'Please choose a file to upload.').notEmpty();
       req.checkBody('description', 'Please enter a description.').notEmpty();
 
       var errors = req.validationErrors();
 
       if (errors) {
+
 
 
       console.log('errors on form ')
