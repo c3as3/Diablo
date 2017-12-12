@@ -1,0 +1,516 @@
+extends layout
+
+block content 
+  
+  section.guides
+    
+    h2 This section is currently under development
+    p We are working on getting this section updated with relevant information pertaining to all aspects of the game. This includes stat data, item data, map layouts, leveling guides, etc... 
+    p This section will most likely change visually over the coming weeks as we test new layouts until we get the proper "feel" that we are looking for.
+
+
+    h2.fhr Faster Hit Recovery
+    p. 
+      Faster Hit Recovery, also known as FHR, is a stat that controls your characters ability to recover after being hit by a mobs attack that deals more than 1/12 of your current HP.
+      This means if you have 120HP and get hit for 10+ damage, your character will enter into "Hit-Stun," thus preventing you from completing any actions until you exit. This Hit-Stun can
+      last anywhere from 0-17 frames(per hit) and can be reduced by acquiring gear that has the Faster Hit Recovery on it. Each class requires a different amount of Faster Hit Recovery in order to
+      have these frames reduced. The chart below will show each class, along with how much FHR is needed to reduce Hit-Stun:
+      
+    table
+      tbody
+        tr
+          th(rowspan="2") Class/Form
+          th(colspan="16") Hit Recovery Frames
+        tr
+          th 17
+          th 16
+          th 15
+          th 14
+          th 13
+          th 12
+          th 11
+          th 10
+          th 9
+          th 8
+          th 7
+          th 6
+          th 5
+          th 4
+          th 3
+          th 2
+        tr
+          td Amazon
+          td -
+          td -
+          td -
+          td -
+          td -
+          td -
+          td 0
+          td 6
+          td 13
+          td 20
+          td 32
+          td 52
+          td 86
+          td 174
+          td 600
+          td -
+        tr
+          td Assassin
+          td -
+          td -
+          td -
+          td -
+          td -
+          td -
+          td -
+          td -
+          td 0
+          td 7
+          td 15
+          td 27
+          td 48
+          td 86
+          td 200
+          td -
+        tr
+          td Barbarian
+          td -
+          td -
+          td -
+          td -
+          td -
+          td -
+          td -
+          td -
+          td 0
+          td 7
+          td 15
+          td 27
+          td 48
+          td 86
+          td 200
+          td -
+        tr
+          td Druid - Human
+          td -
+          td -
+          td -
+          td -
+          td 0
+          td 5
+          td 10
+          td 16
+          td 26
+          td 39
+          td 56
+          td 86
+          td 152
+          td 377
+          td -
+          td -
+        tr
+          td Druid - Bear
+          td -
+          td -
+          td -
+          td -
+          td 0
+          td 5
+          td 10
+          td 16
+          td 24
+          td 37
+          td 54
+          td 86
+          td 152
+          td 360
+          td -
+          td -
+        tr
+          td Druid - Wolf
+          td -
+          td -
+          td -
+          td -
+          td -
+          td -
+          td -
+          td -
+          td -
+          td -
+          td 0
+          td 9
+          td 20
+          td 42
+          td 86
+          td 280
+        tr
+          td Necromancer
+          td -
+          td -
+          td -
+          td -
+          td 0
+          td 5
+          td 10
+          td 16
+          td 26
+          td 39
+          td 56
+          td 86
+          td 152
+          td 377
+          td -
+          td -
+        tr
+          td Paladin
+          td -
+          td -
+          td -
+          td -
+          td -
+          td -
+          td -
+          td -
+          td 0
+          td 7
+          td 15
+          td 27
+          td 48
+          td 86
+          td 200
+          td -
+        tr
+          td Sorceress
+          td -
+          td -
+          td 0
+          td 5
+          td 9
+          td 14
+          td 20
+          td 30
+          td 42
+          td 60
+          td 86
+          td 142
+          td 280
+          td -
+          td -
+          td -
+        tr
+          td Act 1 Merc
+          td -
+          td -
+          td -
+          td -
+          td -
+          td -
+          td 0
+          td 6
+          td 13
+          td 20
+          td 32
+          td 52
+          td 86
+          td 174
+          td 600
+          td -
+        tr
+          td Act 2 Merc
+          td -
+          td -
+          td 0
+          td 5
+          td 9
+          td 14
+          td 20
+          td 30
+          td 42
+          td 60
+          td 86
+          td 142
+          td 280
+          td -
+          td -
+          td -
+        tr
+          td Act 3 Merc
+          td 0
+          td 5
+          td 8
+          td 13
+          td 18
+          td 24
+          td 32
+          td 46
+          td 63
+          td 86
+          td 133
+          td 232
+          td 600
+          td -
+          td -
+          td -
+        tr
+          td Act 5 Merc
+          td -
+          td -
+          td -
+          td -
+          td -
+          td -
+          td -
+          td -
+          td 0
+          td 7
+          td 15
+          td 27
+          td 48
+          td 86
+          td 200
+          td -
+    p.reference Data has been taken from multiple sources with most coming from #[a(href="https://diablo2.diablowiki.net/" target="_blank") Diablo 2 Wiki]
+
+    h2 Faster Cast Rate
+    p.
+      Faster Cast Rate, also known as FCR, is a stat that controls how many frames it takes to cast any given spell. All spells have the same frame data (minus the sorceress) for any given class.
+      This means that no matter which spell you are casting, the frames to cast those spells will all be the same. The more Faster Cast Rate you have, the faster your spell will be caster, thus
+      allowing you to complete other actions. The chart below will show each class, along with how much FCR is needed to reduce casting frames:
+      
+    table
+      tbody
+        tr
+          th(rowspan="2") Class/Form
+          th(colspan="17")  Cast Frames
+        tr
+          th 23
+          th 22
+          th 21
+          th 20
+          th 19
+          th 18
+          th 17
+          th 16
+          th 15
+          th 14
+          th 13
+          th 12
+          th 11
+          th 10
+          th 9
+          th 8
+          th 7
+        tr
+          td Amazon
+          td -
+          td -
+          td -
+          td -
+          td 0
+          td 7
+          td 14
+          td 22
+          td 32
+          td 48
+          td 68
+          td 99
+          td 152
+          td -
+          td -
+          td -
+          td -
+        tr
+          td Assassin
+          td -
+          td -
+          td -
+          td -
+          td -
+          td -
+          td -
+          td 0
+          td 8
+          td 16
+          td 27
+          td 42
+          td 65
+          td 102
+          td 174
+          td -
+          td -
+        tr
+          td Barbarian
+          td -
+          td -
+          td -
+          td -
+          td -
+          td -
+          td -
+          td -
+          td -
+          td -
+          td 0
+          td 9
+          td 20
+          td 37
+          td 63
+          td 105
+          td 200
+        tr
+          td Druid - Human
+          td -
+          td -
+          td -
+          td -
+          td -
+          td 0
+          td 4
+          td 10
+          td 19
+          td 30
+          td 46
+          td 68
+          td 99
+          td 163
+          td -
+          td -
+          td -
+        tr
+          td Druid - Bear
+          td -
+          td -
+          td -
+          td -
+          td -
+          td -
+          td -
+          td 0
+          td 7
+          td 15
+          td 26
+          td 40
+          td 63
+          td 99
+          td 163
+          td -
+          td -
+        tr
+          td Druid - Wolf
+          td -
+          td -
+          td -
+          td -
+          td -
+          td -
+          td -
+          td 0
+          td 6
+          td 14
+          td 26
+          td 40
+          td 60
+          td 95
+          td 157
+          td -
+          td -
+        tr
+          td Necromancer
+          td -
+          td -
+          td -
+          td -
+          td -
+          td -
+          td -
+          td -
+          td 0
+          td 9
+          td 18
+          td 30
+          td 48
+          td 75
+          td 125
+          td -
+          td -
+        tr
+          td Paladin
+          td -
+          td -
+          td -
+          td -
+          td -
+          td -
+          td -
+          td -
+          td 0
+          td 9
+          td 18
+          td 30
+          td 48
+          td 75
+          td 125
+          td -
+          td -
+        tr
+          td Sorceress - Lightning/Chain Lightning
+          td -
+          td -
+          td -
+          td -
+          td 0
+          td 7
+          td 15
+          td 23
+          td 35
+          td 52
+          td 78
+          td 117
+          td 194
+          td -
+          td -
+          td -  
+          td -
+        tr
+          td Sorceress - All Other Spells
+          td -
+          td -
+          td -
+          td -
+          td -
+          td -
+          td -
+          td -
+          td -
+          td -
+          td 0
+          td 9
+          td 20
+          td 37
+          td 63
+          td 105
+          td 200
+        tr
+          td Act 3 Merc
+          td -
+          td -
+          td -
+          td -
+          td -
+          td -
+          td 0
+          td 8
+          td 15
+          td 26
+          td 38
+          td 58
+          td 86
+          td 138
+          td -
+          td -
+          td -
+    p.reference Data has been taken from multiple sources with most coming from #[a(href="https://diablo2.diablowiki.net/" target="_blank") Diablo 2 Wiki]
+      

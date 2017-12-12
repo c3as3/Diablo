@@ -1,0 +1,192 @@
+section.classes{
+  grid-column: 2 / 12;
+  text-align: center;
+
+  .classMenu{
+    margin: 10px 0;
+    ul{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-evenly;
+      align-items: center;
+      text-align: center;
+
+      li{
+        cursor: pointer;
+        margin: 10px 10px;
+
+        a{
+          text-decoration: none;
+          color: white;
+          font-size: 22px;
+        }
+        &:hover{
+          a{
+            color: $diabloRed;
+          }
+        }
+      }
+      @media screen and (max-width: 620px){
+        flex-direction: column;
+      }
+    }
+    @media screen and (max-width: 620px){
+      margin: 10px 0;
+    }
+  }
+
+  .classGroup{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px 10px;
+    align-items: center;
+    margin: 40px 0;
+
+    .classIcon{
+      grid-column: 1;
+      height: 200px;
+      width: 100px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin: 20px 0;
+      @media screen and (max-width: 620px){
+        grid-column: 1;
+      }
+    }
+
+    .classInfo{
+      grid-column: 2 / 7;
+      @media screen and (max-width: 620px){
+        grid-column: 1;
+      }
+    }
+    .amazon{
+      background-image: url('../img/Amazon.gif');
+    }
+    .assassin{
+      background-image: url('../img/Assassin.gif');
+    }
+    .barbarian{
+      background-image: url('../img/Barbarian.gif');
+    }
+    .druid{
+      background-image: url('../img/Druid.gif');
+    }
+    .necromancer{
+      background-image: url('../img/Necromancer.gif');
+    }
+    .paladin{
+      background-image: url('../img/Paladin.gif');
+    }
+    .sorceress{
+      background-image: url('../img/Sorceress.gif');
+    }
+    @media screen and (max-width: 620px){
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+
+    .classSkill{
+      height: 200px;
+      width: 200px;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    .classSkill.clicked{
+      height: 500px;
+      width: 25vw;
+      @media screen and (max-width: 620px){
+        width: 75vw;
+      }
+    }
+    .tree1, .tree2, .tree3{
+      margin: 0 20px;
+    }
+    .tree1{
+      grid-column: 3;
+      @media screen and (max-width: 620px){
+        grid-column: 1;
+      }
+    }
+    .tree2{
+      grid-column: 4;
+      @media screen and (max-width: 620px){
+        grid-column: 1;
+      }
+    }
+    .tree3{
+      grid-column: 5;
+      @media screen and (max-width: 620px){
+        grid-column: 1;
+      }
+    }
+    .amazonSkills1{
+      background-image: url('../img/amazonSkills1.jpg');
+    }
+    .amazonSkills2{
+      background-image: url('../img/amazonSkills2.jpg');
+    }
+    .amazonSkills3{
+      background-image: url('../img/amazonSkills3.jpg');
+    }
+    .assassinSkills1{
+      background-image: url('../img/assassinSkills1.jpg');
+    }
+    .assassinSkills2{
+      background-image: url('../img/assassinSkills2.jpg');
+    }
+    .assassinSkills3{
+      background-image: url('../img/assassinSkills3.jpg');
+    }
+    .barbarianSkills1{
+      background-image: url('../img/barbarianSkills1.jpg');
+    }
+    .barbarianSkills2{
+      background-image: url('../img/barbarianSkills2.jpg');
+    }
+    .barbarianSkills3{
+      background-image: url('../img/barbarianSkills3.jpg');
+    }
+    .druidSkills1{
+      background-image: url('../img/druidSkills1.jpg');
+    }
+    .druidSkills2{
+      background-image: url('../img/druidSkills2.jpg');
+    }
+    .druidSkills3{
+      background-image: url('../img/druidSkills3.jpg');
+    }
+    .necromancerSkills1{
+      background-image: url('../img/necromancerSkills1.jpg');
+    }
+    .necromancerSkills2{
+      background-image: url('../img/necromancerSkills2.jpg');
+    }
+    .necromancerSkills3{
+      background-image: url('../img/necromancerSkills3.jpg');
+    }
+    .paladinSkills1{
+      background-image: url('../img/paladinSkills1.jpg');
+    }
+    .paladinSkills2{
+      background-image: url('../img/paladinSkills2.jpg');
+    }
+    .paladinSkills3{
+      background-image: url('../img/paladinSkills3.jpg');
+    }
+    .sorceressSkills1{
+      background-image: url('../img/sorceressSkills1.jpg');
+    }
+    .sorceressSkills2{
+      background-image: url('../img/sorceressSkills2.jpg');
+    }
+    .sorceressSkills3{
+      background-image: url('../img/sorceressSkills3.jpg');
+    }
+  }
+}

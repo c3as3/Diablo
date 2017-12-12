@@ -1,0 +1,11 @@
+extends layout
+
+block content 
+  section.news
+   
+      each article in articles
+        
+            h2.title #{article.title}
+            p.date #{moment(article.date).format("MM-DD-YYYY")} - Written by #{article.author}
+            p.text #{article.article}
+            //p.author by: #{article.author}

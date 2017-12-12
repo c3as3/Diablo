@@ -4,11 +4,14 @@
   "description": "Diablo Fan site",
   "main": "app.js",
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "NODE_ENV=production node app.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/c3as3/Diablo.git"
+  },
+  "env_production": {
+    "NODE_ENV": "production"
   },
   "keywords": [
     "Diablo",
@@ -20,12 +23,15 @@
   "bugs": {
     "url": "https://github.com/c3as3/Diablo/issues"
   },
-  "homepage": "https://github.com/c3as3/Diablo#readme",
+  "homepage": "www.tristramreborn.com",
   "dependencies": {
     "bluebird": "^3.5.0",
     "body-parser": "^1.18.1",
+    "connect-mongo": "^1.3.2",
+    "cookie-parser": "^1.4.3",
     "express": "^4.15.4",
     "express-recaptcha": "^2.3.0",
+    "express-session": "^1.15.6",
     "express-validator": "^4.1.1",
     "https": "^1.0.0",
     "jade": "^1.11.0",

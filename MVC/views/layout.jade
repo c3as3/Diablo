@@ -1,0 +1,49 @@
+mixin nav-content()
+  ul
+    li.logo
+    li: a(href="/") Home
+    li: a(href="news") News
+    li: a(href="classes") Classes & Skills
+    li: a(href="items") Items
+    li: a(href="guides") Guides
+    li: a(href="leaderboards") Leaderboards
+    li: a(href="twitch") Twitch Streams
+    li: a(href="about") About Us
+
+doctype html
+
+head
+  meta(charset='utf-8')
+  meta(name='viewport', content='width=device-width', initial-scale='1', maximum-scale='1')
+  title Diablo Site | Diablo II Fan Site
+  link(rel='stylesheet', href='../css/main.css')
+  
+body
+  header
+    .logo
+    .desktop-nav
+      +nav-content 
+    
+    .mobile-nav
+      .hamburger
+        span
+        span
+        span
+      .mobile-nav-menu  
+        +nav-content  
+        
+  section.siteCall    
+    h2 Welcome to Tristram Reborn, the Diablo 2 Fan Site built by Twitch Streamers for the Community
+    br
+    h4 Our Goal is to bing the community of Diablo 2 together under a fair, legit, and honest place. We encourage community play, trading, and overall "Fun-ness."
+        
+  .body-wrap      
+    block content      
+
+  footer
+    h4 - - - - - - - - - - Tristram Reborn - - - - - - - - - -
+    p Copyright @ 2017 - Developed by [Michael Diglio & Cesar Sanchez]
+        
+        
+  script(src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous")      
+  script(src='/scripts.js')

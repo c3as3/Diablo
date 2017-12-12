@@ -1,14 +1,17 @@
+doctype html
+
+head
+  meta(charset="utf-8")
+  meta(name="viewport", content="width=device-width, initial-scale=1")
+  title Tristram Reborn | Messages
+  link(rel="stylesheet", href="messages.css")
+
 <form  method="POST">
-if errors
-  ul
-    for error in errors
-      li!= error.msg
 <p class="first"><input type="text" name="name" placeholder="Name"><br/>
 <p class="email"><input type="text" name="email" placeholder="Email"><br/>
-<p class="twitch"><input type="text" name="twitch" placeholder="Twitch Username"><br/>
 <p class="message"><textarea rows="6" type="text" name="message" placeholder="Message"></textarea><br/>
 <button input="submit" value="submit" disabled>Submit</button>
-<div class="g-recaptcha" data-sitekey="6LckTSEUAAAAAFnv4Jm1zhHDbUVwjGn11s4QrB0q" data-callback="recaptcha_callback"></div>
+<div class="g-recaptcha" data-sitekey="6LdQHTEUAAAAAEck5dN_0xuNI97DTZw9YKhPYrx2" data-callback="recaptcha_callback"></div>
 script.
   function recaptcha_callback() {
   $('button').removeAttr('disabled');
@@ -16,4 +19,4 @@ script.
 </form>
 
 script(src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous")
-  script(src='https://www.google.com/recaptcha/api.js')
+script(src='https://www.google.com/recaptcha/api.js')

@@ -2,7 +2,14 @@ const express = require ('express');
 const bodyParser = require ('body-parser')
 const path = require('path');
 const expressValidator = require('express-validator');
+const session = require('express-session');
+const moment = require('moment');
+const MongoStore = require('connect-mongo')(session);
+var cookieParser = require('cookie-parser');
 var app = express();
+require('./MVC/models/db')
+
+
 
 /*
 ///////////////////////////////////////
@@ -40,7 +47,7 @@ app.use(function(req, res, next){
 //////////bodyParser Middleware////////
 */
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: false}))
+app.use(bodyParser.urlencoded({extended: true}));
 //Express Validator MiddleWare
 app.use(expressValidator({
   errorFormatter: function(param, msg, value) {
@@ -55,11 +62,28 @@ app.use(expressValidator({
       param : formParam,
       msg   : msg,
       value : value
+
     };
   }
 }));
 
+var maxAge = (session.cookie||{}).maxAge || 120000;
+if (process.env.NODE_ENV == 'production') var dbURL = 'mongodb://localhost:27017/tristramReborn'
+else var dbURL = 'mongodb://diabloadmin:rocktheboat@ds139994.mlab.com:39994/diablo'
 
+
+  app.use(session({
+    secret: 'diablo2',
+    saveUninitialized: 'false',
+    resave: 'false',
+    "cookie": {
+      expires: new Date(Date.now() + maxAge),
+        },
+    store: new MongoStore({
+      url: dbURL,
+      touchAfter: 24 * 3600
+    })
+  }));
 
 /*
 ///////////////////////////////////////
@@ -83,15 +107,17 @@ app.use(express.static(path.join(__dirname, 'public', 'javascript')))
 /////////////////////////////////////////////
 /////////////////////////////////////////////
 */
+
 app.listen(function(port, err){
-  var port = 3000;
+  if (process.env.NODE_ENV == 'production') var port = 8080;
+else var port = 3000;
   if (err){
     console.log('Whoops, there seems to be a problem with the connection');
   }else{
+    (port, 'localhost');
   console.log('This server started on port '+ port);
 }})
 module.exports = app;
-
 /*
 /////////////////////////////////////////////
 /////////////////////////////////////////////
